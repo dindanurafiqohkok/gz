@@ -4,13 +4,11 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-on:
-  schedule:
-    - cron: '0 0 * * *'  # Run once per day at midnight
-  workflow_dispatch:  # Allow manual triggers
-name: Deploy Jekyll site to Pages
+
 
 on:
+ schedule:
+    - cron: '0 0 * * *'  # Run once per day at midnight
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
