@@ -1,6 +1,25 @@
+---
+layout: null
+permalink: /robots.txt
+---
 # www.robotstxt.org/
 
 User-agent: *
 Allow: /
 
+# Disallow files and directories
+Disallow: /404.html
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.jekyll-cache/
+Disallow: /_plugins/
+Disallow: /_site/
+Disallow: /_data/
+
+# Allow scripts and media files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Sitemap
 Sitemap: {{ site.url }}/sitemap.xml

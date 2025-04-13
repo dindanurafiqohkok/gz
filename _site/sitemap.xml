@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Halaman Utama -->
   <url>
     <loc>http://0.0.0.0:5000/</loc>
-    <lastmod>2025-04-13T09:41:02+00:00</lastmod>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Halaman Penting -->
   <url>
     <loc>http://0.0.0.0:5000/tags/</loc>
-    <lastmod>2025-04-13T09:41:02+00:00</lastmod>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:5000/about-us/</loc>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:5000/privacy-policy/</loc>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:5000/terms-of-service/</loc>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Tag Pages -->
+  
+  
+  <!-- Game Posts -->
+  
+  <url>
+    <loc>http://0.0.0.0:5000/pixel-adventure/</loc>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:5000/pixel-adventure/</loc>
-    <lastmod>2025-04-13T09:41:02+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://0.0.0.0:5000/space-shooter/</loc>
-    <lastmod>2025-04-12T09:41:02+00:00</lastmod>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://0.0.0.0:5000/puzzle-master/</loc>
-    <lastmod>2025-04-11T09:41:02+00:00</lastmod>
+    <lastmod>2025-04-13T09:43:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
 </urlset>

@@ -115,7 +115,23 @@ module Jekyll
           )
           
           # Set document content and front matter
-          doc.content = description
+          # Siapkan konten dengan deskripsi dan tag
+          content = <<~CONTENT
+            #{description}
+
+            {% if page.tags.size > 0 %}
+            <div class="post-tags-section">
+              <h3>Game Tags:</h3>
+              <ul class="post-tags-list">
+                {% for tag in page.tags %}
+                  <li><a href="{{ site.baseurl }}/tags/{{ tag | slugify }}">{{ tag }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+          CONTENT
+
+          doc.content = content
           doc.data["title"] = title
           doc.data["date"] = date
           doc.data["permalink"] = "/#{slug}/"
@@ -125,6 +141,7 @@ module Jekyll
           doc.data["iframe_code"] = iframe_code
           doc.data["layout"] = "post"
           doc.data["guid"] = guid
+          doc.data["last_modified_at"] = Time.now
           
           # Add the document to the collection
           site.collections["gameposts"].docs << doc
