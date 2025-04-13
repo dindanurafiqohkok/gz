@@ -18,10 +18,7 @@ jobs:
       with:
         ruby-version: '3.0'
         bundler-cache: true
-
-    - name: Install Dependencies
-      run: |
-        bundle install
+  
 
     - name: Build Site
       run: |
