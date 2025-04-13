@@ -43,56 +43,76 @@ def create_tables():
 
 def fetch_games_from_api():
     """
-    Mengambil data game dari GameMonetize API atau menggunakan data sampel untuk testing
+    Mengambil data game dari GameMonetize API
     """
-    # Untuk testing, gunakan data sampel
+    api_url = "https://rss.gamemonetize.com/rssfeed.php?format=json&category=All&type=html5&popularity=newest&company=All&amount=All"
+    
+    try:
+        print(f"Mengambil data dari API: {api_url}")
+        with urllib.request.urlopen(api_url) as response:
+            raw_data = response.read().decode('utf-8')
+            data = json.loads(raw_data)
+            
+            # Periksa struktur data yang sebenarnya dari API
+            if isinstance(data, dict) and 'channel' in data and 'item' in data['channel']:
+                # Format standar JSON RSS
+                items = data['channel']['item']
+                print(f"Format RSS JSON standar ditemukan, {len(items)} game ditemukan")
+                return items
+            elif isinstance(data, dict) and 'rss' in data and 'channel' in data['rss']:
+                # Format alternatif dengan namespace rss
+                items = data['rss']['channel']['item']
+                print(f"Format RSS/channel ditemukan, {len(items)} game ditemukan")
+                return items
+            else:
+                # Struktur lain, coba deteksi item dari kunci yang ada
+                print(f"Format tidak dikenal, mencoba parse: {list(data.keys())}")
+                if isinstance(data, list):
+                    print(f"Data adalah array dengan {len(data)} item")
+                    return data  
+                else:
+                    # Jika tidak ada format yang cocok, buat contoh untuk pengembangan
+                    print("Tidak dapat menentukan format API, menggunakan data sampel")
+                    return generate_sample_games()
+            
+    except Exception as e:
+        print(f"Error mengambil data dari API: {e}")
+        return generate_sample_games()
+
+def generate_sample_games():
+    """
+    Membuat data sampel untuk development saat API tidak tersedia
+    """
     print("Menggunakan data sampel untuk testing")
     return [
         {
-            "title": "Sample Game 1",
+            "title": "Stunt Car Extreme",
             "guid": "game-1",
-            "description": "This is a sample game description.",
-            "enclosure": {"url": "https://example.com/game1.png"},
+            "description": "Drive through challenging tracks and perform stunts with your car in this exciting racing game.",
+            "enclosure": {"url": "https://img.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/512x384.jpg"},
             "pubDate": "Sun, 13 Apr 2025 12:00:00 +0000",
-            "iframe": "<iframe src='https://example.com/game1'></iframe>",
-            "category": ["action", "puzzle"]
+            "iframe": """<iframe frameborder="0" src="https://games.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/" width="100%" height="100%" scrolling="no"></iframe>""",
+            "category": ["racing", "action", "stunts"]
         },
         {
-            "title": "Sample Game 2",
+            "title": "Tower Defense Kingdom Wars",
             "guid": "game-2",
-            "description": "Another sample game description.",
-            "enclosure": {"url": "https://example.com/game2.png"},
+            "description": "Defend your kingdom against waves of enemies by strategically placing towers and upgrading your defenses.",
+            "enclosure": {"url": "https://img.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/512x384.jpg"},
             "pubDate": "Sun, 13 Apr 2025 11:00:00 +0000",
-            "iframe": "<iframe src='https://example.com/game2'></iframe>",
-            "category": ["strategy"]
+            "iframe": """<iframe frameborder="0" src="https://games.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/" width="100%" height="100%" scrolling="no"></iframe>""",
+            "category": ["strategy", "tower defense", "war"]
         },
         {
-            "title": "Sample Game 3",
+            "title": "Monster Blocks",
             "guid": "game-3",
-            "description": "Third sample game with cool features.",
-            "enclosure": {"url": "https://example.com/game3.png"},
+            "description": "Connect matching monster blocks to clear the board and progress through increasingly challenging puzzles.",
+            "enclosure": {"url": "https://img.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/512x384.jpg"},
             "pubDate": "Sun, 13 Apr 2025 10:00:00 +0000",
-            "iframe": "<iframe src='https://example.com/game3'></iframe>",
-            "category": ["arcade", "casual"]
+            "iframe": """<iframe frameborder="0" src="https://games.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/" width="100%" height="100%" scrolling="no"></iframe>""",
+            "category": ["puzzle", "casual", "blocks"]
         }
     ]
-    
-    # Kode berikut untuk penggunaan API asli - dinonaktifkan untuk sementara
-    """
-    api_url = "https://rss.gamemonetize.com/rssfeed.php?format=json"
-    
-    try:
-        with urllib.request.urlopen(api_url) as response:
-            data = json.loads(response.read().decode('utf-8'))
-            if 'channel' in data and 'item' in data['channel']:
-                return data['channel']['item']
-            else:
-                print(f"Format API tidak sesuai")
-                return []
-    except Exception as e:
-        print(f"Error mengambil data dari API: {e}")
-        return []
-    """
 
 def save_games_to_database(games):
     """

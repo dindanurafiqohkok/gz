@@ -8,63 +8,86 @@ module Jekyll
     priority :high
 
     def generate(site)
-      # Use sample data for development purposes
-      # In production, we would fetch from the API
-      json_data = sample_data
+      # Load data from YAML file created by db_manager.py
+      yaml_data = load_from_yaml(site)
       
       # Process the data
-      process_game_data(site, json_data)
+      process_game_data(site, yaml_data)
     end
     
     private
     
-    def sample_data
-      # Sample data structure for development
-      {
-        "rss" => {
-          "channel" => {
-            "item" => [
-              {
-                "title" => "Pixel Adventure",
-                "link" => "https://example.com/games/pixel-adventure",
-                "description" => "An exciting pixel art adventure game where you explore mysterious worlds.",
-                "pubDate" => Time.now.to_s,
-                "guid" => "game-001",
-                "image" => "https://via.placeholder.com/300x200/00CED1/FFFFFF?text=Pixel+Adventure",
-                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
-                "category" => ["Adventure", "Arcade", "Pixel Art"]
-              },
-              {
-                "title" => "Space Shooter",
-                "link" => "https://example.com/games/space-shooter",
-                "description" => "Defend your space station from waves of alien invaders in this action-packed shooter.",
-                "pubDate" => (Time.now - 86400).to_s,
-                "guid" => "game-002",
-                "image" => "https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Space+Shooter",
-                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
-                "category" => ["Action", "Shooter", "Sci-Fi"]
-              },
-              {
-                "title" => "Puzzle Master",
-                "link" => "https://example.com/games/puzzle-master",
-                "description" => "Test your logical thinking with increasingly difficult puzzles.",
-                "pubDate" => (Time.now - 172800).to_s,
-                "guid" => "game-003",
-                "image" => "https://via.placeholder.com/300x200/4CAF50/FFFFFF?text=Puzzle+Master",
-                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
-                "category" => ["Puzzle", "Strategy", "Brain Teaser"]
-              }
-            ]
-          }
-        }
-      }
+    def load_from_yaml(site)
+      # Check if _data/game_monetize.yml exists and load it
+      yaml_path = File.join(site.source, '_data', 'game_monetize.yml')
+      
+      begin
+        if File.exist?(yaml_path)
+          Jekyll.logger.info "GameMonetizeGenerator:", "Loading data from _data/game_monetize.yml"
+          games = YAML.load_file(yaml_path)
+          return games
+        else
+          # If YAML file doesn't exist, use sample data
+          Jekyll.logger.warn "GameMonetizeGenerator:", "No _data/game_monetize.yml found, using sample data"
+          return sample_games
+        end
+      rescue => e
+        Jekyll.logger.error "GameMonetizeGenerator:", "Error loading YAML file: #{e.message}"
+        return sample_games
+      end
     end
     
-    def process_game_data(site, json_data)
-      games = json_data["rss"]["channel"]["item"] rescue []
+    def sample_games
+      # Sample data as fallback
+      [
+        {
+          "title" => "Stunt Car Extreme",
+          "guid" => "game-1",
+          "description" => "Drive through challenging tracks and perform stunts with your car in this exciting racing game.",
+          "enclosure" => {"url" => "https://img.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/512x384.jpg"},
+          "pubDate" => Time.now.to_s,
+          "iframe" => "<iframe frameborder=\"0\" src=\"https://games.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>",
+          "category" => ["racing", "action", "stunts"]
+        },
+        {
+          "title" => "Tower Defense Kingdom Wars",
+          "guid" => "game-2",
+          "description" => "Defend your kingdom against waves of enemies by strategically placing towers and upgrading your defenses.",
+          "enclosure" => {"url" => "https://img.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/512x384.jpg"},
+          "pubDate" => (Time.now - 86400).to_s,
+          "iframe" => "<iframe frameborder=\"0\" src=\"https://games.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>",
+          "category" => ["strategy", "tower defense", "war"]
+        },
+        {
+          "title" => "Monster Blocks",
+          "guid" => "game-3",
+          "description" => "Connect matching monster blocks to clear the board and progress through increasingly challenging puzzles.",
+          "enclosure" => {"url" => "https://img.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/512x384.jpg"},
+          "pubDate" => (Time.now - 172800).to_s,
+          "iframe" => "<iframe frameborder=\"0\" src=\"https://games.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/\" width=\"100%\" height=\"100%\" scrolling=\"no\"></iframe>",
+          "category" => ["puzzle", "casual", "blocks"]
+        }
+      ]
+    end
+    
+    def process_game_data(site, games)
+      # If games is a nested structure, try to extract the items
+      if games.is_a?(Hash) && games["rss"] && games["rss"]["channel"] && games["rss"]["channel"]["item"]
+        # Extract from rss->channel->item structure
+        games = games["rss"]["channel"]["item"]
+      elsif games.is_a?(Hash) && games["channel"] && games["channel"]["item"]
+        # Extract from channel->item structure
+        games = games["channel"]["item"]
+      end
+      
+      # Ensure we have an array of games
+      if !games.is_a?(Array)
+        Jekyll.logger.warn "GameMonetizeGenerator:", "Games data is not an array. Type: #{games.class}"
+        games = [games].compact
+      end
       
       if games.nil? || games.empty?
-        Jekyll.logger.warn "GameMonetizeGenerator:", "No games found in the API response"
+        Jekyll.logger.warn "GameMonetizeGenerator:", "No games found in the data source"
         return
       end
       
@@ -79,14 +102,22 @@ module Jekyll
       # Process each game item
       games.each do |game|
         begin
-          # Extract data from the game object
+          # Extract data from the game object - handle both standard and YAML import formats
           title = game["title"] || "Untitled Game"
           link = game["link"] || ""
           description = game["description"] || ""
           pub_date = game["pubDate"] || Time.now.to_s
           guid = game["guid"] || ""
-          image = game["image"] || ""
-          iframe_code = game["iframe_code"] || ""
+          
+          # Handle YAML format from db_manager.py which uses enclosure hash and iframe
+          if game["enclosure"] && game["enclosure"].is_a?(Hash) && game["enclosure"]["url"]
+            image = game["enclosure"]["url"]
+          else
+            image = game["image"] || ""
+          end
+          
+          # Handle iframe code with priority to iframe field from YAML
+          iframe_code = game["iframe"] || game["iframe_code"] || ""
           
           # Extract and clean up tags
           categories = game["category"]

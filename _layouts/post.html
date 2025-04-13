@@ -36,6 +36,10 @@ layout: default
             <div class="game-container">
                 {{ page.iframe_code }}
             </div>
+        {% elsif page.iframe %}
+            <div class="game-container">
+                {{ page.iframe }}
+            </div>
         {% endif %}
         
         {{ page.content }}
