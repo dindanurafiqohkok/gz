@@ -5,4 +5,15 @@
         </a>
         <p class="site-description">{{ site.description }}</p>
     </div>
+    
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+        {% assign tags = site.gameposts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+        {% for tag in tags limit: 8 %}
+        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="category-btn">{{ tag }}</a>
+        {% endfor %}
+        {% if tags.size > 8 %}
+        <a href="{{ site.baseurl }}/tags/" class="category-btn more-btn">More...</a>
+        {% endif %}
+    </div>
 </header>

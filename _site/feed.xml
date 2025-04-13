@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Game Monetize Portal</title>
-    <description>Your source for HTML5 games and gaming content</description>
+    <title>Game-Play</title>
+    <description>Pengalaman gaming HTML5 terbaik dengan koleksi game arcade, action, puzzle, dan olahraga yang terbaru dan gratis. Mainkan game langsung di browser tanpa perlu download!</description>
     <link>http://0.0.0.0:5000</link>
     <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Apr 2025 10:15:00 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Apr 2025 10:15:00 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Apr 2025 10:18:08 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Apr 2025 10:18:08 +0000</lastBuildDate>
     <generator>Jekyll Game Monetize Feed Generator</generator>
     <language>en-us</language>
     <item>
