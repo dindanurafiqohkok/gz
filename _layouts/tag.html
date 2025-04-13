@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="tag-archive">
+    <h1>{{ page.tag }}</h1>
+    
+    <div class="post-list">
+        {% for post in site.gameposts %}
+            {% if post.tags contains page.tag %}
+            <div class="post-item">
+                <a href="{{ post.url | relative_url }}">
+                    {% if post.featured_image %}
+                    <div class="post-image">
+                        <img src="{{ post.featured_image }}" alt="{{ post.title }}">
+                    </div>
+                    {% endif %}
+                    <div class="post-details">
+                        <h2>{{ post.title }}</h2>
+                        {% if post.description %}
+                        <p class="post-excerpt">{{ post.description | truncate: 150 }}</p>
+                        {% endif %}
+                        <div class="post-meta">
+                            <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

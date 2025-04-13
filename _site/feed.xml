@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Monetize Portal</title>
+    <description>Your source for HTML5 games and gaming content</description>
+    <link>http://0.0.0.0:5000/</link>
+    <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 13 Apr 2025 09:32:10 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Apr 2025 09:32:10 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Pixel Adventure</title>
+        <description>An exciting pixel art adventure game where you explore mysterious worlds.</description>
+        <pubDate>Sun, 13 Apr 2025 09:32:10 +0000</pubDate>
+        <link>http://0.0.0.0:5000/pixel-adventure/</link>
+        <guid isPermaLink="true">http://0.0.0.0:5000/pixel-adventure/</guid>
+        
+        <category>Adventure</category>
+        
+        <category>Arcade</category>
+        
+        <category>Pixel Art</category>
+        
+      </item>
+    
+      <item>
+        <title>Space Shooter</title>
+        <description>Defend your space station from waves of alien invaders in this action-packed shooter.</description>
+        <pubDate>Sat, 12 Apr 2025 09:32:10 +0000</pubDate>
+        <link>http://0.0.0.0:5000/space-shooter/</link>
+        <guid isPermaLink="true">http://0.0.0.0:5000/space-shooter/</guid>
+        
+        <category>Action</category>
+        
+        <category>Shooter</category>
+        
+        <category>Sci-Fi</category>
+        
+      </item>
+    
+      <item>
+        <title>Puzzle Master</title>
+        <description>Test your logical thinking with increasingly difficult puzzles.</description>
+        <pubDate>Fri, 11 Apr 2025 09:32:10 +0000</pubDate>
+        <link>http://0.0.0.0:5000/puzzle-master/</link>
+        <guid isPermaLink="true">http://0.0.0.0:5000/puzzle-master/</guid>
+        
+        <category>Puzzle</category>
+        
+        <category>Strategy</category>
+        
+        <category>Brain Teaser</category>
+        
+      </item>
+    
+  </channel>
+</rss>

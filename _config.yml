@@ -1,0 +1,53 @@
+# Site settings
+title: Game Monetize Portal
+description: Your source for HTML5 games and gaming content
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections
+collections:
+  gameposts:
+    output: true
+    permalink: /:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "gameposts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# API settings
+game_monetize_api: "https://rss.gamemonetize.com/rssfeed.php?format=json&category=All&type=html5&popularity=newest&company=All&amount=All"
+
+# SEO settings
+social:
+  name: Game Monetize Portal
+  links:
+    - https://twitter.com/yourusername
+    - https://facebook.com/yourusername
+    - https://instagram.com/yourusername
+
+# Other settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,48 @@
+---
+layout: default
+title: Categories
+permalink: /tags/
+---
+
+<div class="tags-page">
+    <h1 class="page-title">Game Categories</h1>
+    
+    <div class="tag-cloud">
+        {% assign tags = site.gameposts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+        {% for tag in tags %}
+        <a href="#{{ tag | slugify }}" class="tag-item">{{ tag }}</a>
+        {% endfor %}
+    </div>
+    
+    <div class="tag-sections">
+        {% for tag in tags %}
+        <section id="{{ tag | slugify }}" class="tag-section">
+            <h2 class="tag-title">{{ tag }}</h2>
+            <div class="post-list">
+                {% for post in site.gameposts %}
+                    {% if post.tags contains tag %}
+                    <div class="post-item">
+                        <a href="{{ post.url | relative_url }}">
+                            {% if post.featured_image %}
+                            <div class="post-image">
+                                <img src="{{ post.featured_image }}" alt="{{ post.title }}">
+                            </div>
+                            {% endif %}
+                            <div class="post-details">
+                                <h3>{{ post.title }}</h3>
+                                {% if post.description %}
+                                <p class="post-excerpt">{{ post.description | truncate: 100 }}</p>
+                                {% endif %}
+                                <div class="post-meta">
+                                    <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+</div>
