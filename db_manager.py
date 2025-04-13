@@ -189,20 +189,39 @@ def save_games_to_database(games, limit=20):
             image_url = game.get('thumbnail')
         
         # Coba beberapa kemungkinan format tanggal
-        published_date = game.get('pubDate', '') or game.get('published_date', '') or game.get('date', '')
+        published_date = game.get('pubDate', '') or game.get('published_date', '') or game.get('date', '') or datetime.now().strftime('%a, %d %b %Y %H:%M:%S')
         
-        # Coba beberapa kemungkinan format iframe
-        iframe_code = game.get('iframe', '') or game.get('iframe_code', '') or game.get('embed', '')
-        
-        # Membuat slug dari judul
-        slug = title.lower().replace(' ', '-').replace('/', '-')
-        
-        # Mendapatkan tags
-        categories = game.get('category', [])
-        if isinstance(categories, str):
-            tags = [categories]
+        # Buat iframe code jika tidak ada di API
+        if game.get('iframe') or game.get('iframe_code') or game.get('embed'):
+            iframe_code = game.get('iframe', '') or game.get('iframe_code', '') or game.get('embed', '')
+        elif game.get('url'):
+            # Buat iframe dari URL game
+            game_url = game.get('url')
+            width = game.get('width', '800')
+            height = game.get('height', '600')
+            iframe_code = f'<iframe frameborder="0" src="{game_url}" width="100%" height="100%" scrolling="no" allow="autoplay" allowfullscreen></iframe>'
         else:
-            tags = categories
+            iframe_code = ""
+            
+        # Membuat slug dari judul
+        slug = title.lower().replace(' ', '-').replace('/', '-').replace('?', '').replace('&', 'and')
+        
+        # Tangani tags - prioritaskan field tags yang ada di API GameMonetize
+        if game.get('tags'):
+            # API GameMonetize mengirim tags sebagai string yang dipisahkan koma
+            if isinstance(game.get('tags'), str):
+                tags = [tag.strip() for tag in game.get('tags').split(',')]
+            else:
+                tags = game.get('tags')
+        # Jika tidak ada tags, gunakan category
+        elif game.get('category'):
+            # Kategori bisa berupa string atau array
+            if isinstance(game.get('category'), str):
+                tags = [game.get('category')]
+            else:
+                tags = game.get('category')
+        else:
+            tags = []
         
         # Parse tanggal
         try:

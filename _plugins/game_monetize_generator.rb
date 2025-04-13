@@ -119,15 +119,25 @@ module Jekyll
           # Handle iframe code with priority to iframe field from YAML
           iframe_code = game["iframe"] || game["iframe_code"] || ""
           
-          # Extract and clean up tags
-          categories = game["category"]
-          tags = if categories.is_a?(Array)
-                  categories.map(&:to_s).map(&:strip).reject(&:empty?)
-                elsif categories.is_a?(String)
-                  categories.split(',').map(&:strip).reject(&:empty?)
-                else
-                  []
-                end
+          # Extract and clean up tags - menangani berbagai format dari API
+          categories = game["category"] 
+          
+          # Cara tag diproses - prioritaskan tags jika ada
+          if game["tags"] && game["tags"].is_a?(String) && !game["tags"].empty?
+            # API GameMonetize mengirim tags sebagai string (dipisahkan koma)
+            tags = game["tags"].split(',').map(&:strip).reject(&:empty?)
+          elsif categories.is_a?(Array)
+            # Format array untuk categories
+            tags = categories.map(&:to_s).map(&:strip).reject(&:empty?)
+          elsif categories.is_a?(String)
+            # Jika category adalah string, pisahkan dengan koma
+            tags = categories.split(',').map(&:strip).reject(&:empty?)
+          else
+            tags = []
+          end
+          
+          # Sanitasi tag untuk mencegah konflik
+          tags = tags.map { |tag| tag.strip }
           
           # Add to all tags list
           all_tags.concat(tags)
@@ -181,9 +191,15 @@ module Jekyll
         end
       end
       
-      # Generate tag pages
+      # Generate tag pages - menggunakan hash untuk mencegah duplikasi
+      tag_pages = {}
       all_tags.uniq.each do |tag|
-        site.pages << TagPage.new(site, site.source, "tags", tag)
+        # Create a unique key for each tag
+        tag_slug = tag.downcase.gsub(/[^\w\s-]/, '').gsub(/\s+/, '-').gsub(/-+/, '-')
+        unless tag_pages.key?(tag_slug)
+          tag_pages[tag_slug] = TagPage.new(site, site.source, "tags", tag)
+          site.pages << tag_pages[tag_slug]
+        end
       end
       
       # Save to data file for reference
@@ -220,12 +236,16 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = "#{tag.downcase.gsub(' ', '-')}.html"
+      
+      # Buat slug yang konstan untuk tag
+      slug = tag.downcase.gsub(/[^\w\s-]/, '').gsub(/\s+/, '-').gsub(/-+/, '-')
+      @name = "#{slug}.html"
       
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag.html')
       self.data['tag'] = tag
       self.data['title'] = "Games tagged with #{tag}"
+      self.data['permalink'] = "/tags/#{slug}/"
     end
   end
 end
