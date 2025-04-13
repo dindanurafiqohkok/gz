@@ -1,38 +1,367 @@
 ---
-- title: Pixel Adventure
-  link: https://example.com/games/pixel-adventure
-  description: An exciting pixel art adventure game where you explore mysterious worlds.
-  pubDate: '2025-04-13 09:55:08 +0000'
-  guid: game-001
-  image: https://via.placeholder.com/300x200/00CED1/FFFFFF?text=Pixel+Adventure
-  iframe_code: "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800'
-    height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>"
-  category:
-  - Adventure
+- category:
+  - racing
+  - action
+  - stunts
+  description: Drive through challenging tracks and perform stunts with your car in
+    this exciting racing game.
+  enclosure:
+    url: https://img.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/512x384.jpg
+  guid: game-1
+  iframe: <iframe frameborder="0" src="https://games.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/"
+    width="100%" height="100%" scrolling="no"></iframe>
+  last_updated: '2025-04-13 09:55:36'
+  pubDate: 'Sun, 13 Apr 2025 12:00:00 '
+  slug: sample-game-1
+  title: Stunt Car Extreme
+- category:
+  - strategy
+  - tower defense
+  - war
+  description: Defend your kingdom against waves of enemies by strategically placing
+    towers and upgrading your defenses.
+  enclosure:
+    url: https://img.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/512x384.jpg
+  guid: game-2
+  iframe: <iframe frameborder="0" src="https://games.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/"
+    width="100%" height="100%" scrolling="no"></iframe>
+  last_updated: '2025-04-13 09:55:36'
+  pubDate: 'Sun, 13 Apr 2025 11:00:00 '
+  slug: sample-game-2
+  title: Tower Defense Kingdom Wars
+- category:
+  - puzzle
+  - casual
+  - blocks
+  description: Connect matching monster blocks to clear the board and progress through
+    increasingly challenging puzzles.
+  enclosure:
+    url: https://img.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/512x384.jpg
+  guid: game-3
+  iframe: <iframe frameborder="0" src="https://games.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/"
+    width="100%" height="100%" scrolling="no"></iframe>
+  last_updated: '2025-04-13 09:55:36'
+  pubDate: 'Sun, 13 Apr 2025 10:00:00 '
+  slug: sample-game-3
+  title: Monster Blocks
+- category:
   - Arcade
-  - Pixel Art
-- title: Space Shooter
-  link: https://example.com/games/space-shooter
-  description: Defend your space station from waves of alien invaders in this action-packed
-    shooter.
-  pubDate: '2025-04-12 09:55:08 +0000'
-  guid: game-002
-  image: https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Space+Shooter
-  iframe_code: "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800'
-    height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>"
-  category:
+  description: The Sprunki brothers have invaded the entire forest and theyre everywhere.
+    You must help the turquoise and red-suited brothers to reach the cash register
+    as quickly as possible. Help all the brothers. Collect the cookies and reach the
+    cash register. Throw cookies at the Sprunki brothers and defeat them.
+  enclosure:
+    url: https://img.gamemonetize.com/yv9zfw3upjb12a2hmnll9m49c57poyir/512x384.jpg
+  guid: '33656'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: sprunki-456-squid-cookie
+  title: Sprunki 456 Squid Cookie
+- category:
+  - Hypercasual
+  description: Click Energy is a fast-paced casual game where every second counts!
+    Tap on the appearing objects as quickly as possible &amp;mdash; but watch out
+    for the red ones! Miss too many or click the wrong one, and it&amp;rsquo;s game
+    over. How many can you catch before time runs out?
+  enclosure:
+    url: https://img.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/512x384.jpg
+  guid: '33657'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: click-energy
+  title: Click Energy
+- category:
+  - Arcade
+  description: Skibidi Toilet Sharp Shooter is an exciting and challenging shooting
+    game that puts your precision and strategic skills to the test. In this game,
+    you take control of the iconic Skibidi Toilet, tasked with eliminating waves of
+    stickman enemies. However, this isn&amp;rsquo;t just a simple shoot-&amp;rsquo;em-up
+    game&amp;mdash;each level is designed to test your accuracy and decision-making,
+    as you&amp;rsquo;ll have a limited number of bullets to take out every stickman
+    enemy in sight. At the start of each level, stickman enemies line up, waiting
+    to be shot. While it may seem easy at first, the difficulty quickly ramps up as
+    you progress. The stickmen may start moving, creating dist
+  enclosure:
+    url: https://img.gamemonetize.com/x7pi2xioc5nr43wg4xclivtz3eyfr53d/512x384.jpg
+  guid: '33658'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: skibidi-toilet-sharp-shooter
+  title: Skibidi Toilet Sharp Shooter
+- category:
+  - Hypercasual
+  description: Grass Ranch is a super fun and relaxing casual game that makes you
+    a true ranch grass-mowing master. If you like to complete simple and fun tasks
+    in a cozy environment, then you cant miss this game. In this world of green grass,
+    you will mow grass constantly. Keep mowing the lawn and feed some cute animals.
+  enclosure:
+    url: https://img.gamemonetize.com/jfku2chwk30oquvngfwfnm4pqrajvtu3/512x384.jpg
+  guid: '33659'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: grass-ranch
+  title: Grass Ranch
+- category:
+  - Girls
+  description: 'Avatar Life: My Town game is a casual simulator game for kids. You
+    can enjoy creating your sweet home stories! Meet fun family characters in the
+    dollhouse game! Role-play house games and manage family life in your new home!
+    You need to take good care of your character and prepare delicious food. Cooking
+    a big meal.'
+  enclosure:
+    url: https://img.gamemonetize.com/6xuwuvslseewbcdb3x9rp3hz3qcwp4ej/512x384.jpg
+  guid: '33660'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: avatar-life-my-town
+  title: Avatar Life My Town
+- category:
+  - Hypercasual
+  description: Your task is to connect diamonds until you get the biggest one. Compete
+    with friends and colleagues! In the game you have a game zone where diamonds fall
+    and connect if they have the same color! Connect as many diamonds as possible
+    to get the biggest one, collect points! Become the first on the leaderboard! The
+    game has relaxing gameplay and beautiful graphics, play and relax!
+  enclosure:
+    url: https://img.gamemonetize.com/z4fspnywdaanz9x1riy3cfewfmov04w9/512x384.jpg
+  guid: '33661'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: merge-diamonds:-treasure!
+  title: 'Merge Diamonds: Treasure!'
+- category:
+  - Puzzles
+  description: 'Welcome to Color Hoop: Sort Puzzle Game, the ultimate game of your
+    sorting color and puzzle game solving skills! Immerse yourself in a world of vibrant
+    colors and challenging puzzles, where your mission is to sort and organize many
+    kinds of colorful hoops. This addictive and visually captivating game will keep
+    you entertained for hours on end.'
+  enclosure:
+    url: https://img.gamemonetize.com/q2fcgyk3dtprdnf8279v45ssixlwqi9v/512x384.jpg
+  guid: '33662'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: color-hoop:-sort-puzzle
+  title: 'Color Hoop: Sort Puzzle'
+- category:
+  - Puzzles
+  description: 'The Puzzle Box Challenge Get ready to test your brain with The Puzzle
+    Box Challenge &amp;ndash; the ultimate number-merging puzzle game! Slide, merge,
+    and match identical numbers to create higher values and beat your high score.
+    Every move counts as you try to clear the board, unlock combos, and strategize
+    your way through endless merging fun! How to Play: Merge matching numbers to create
+    a new one. Plan your moves wisely &amp;ndash; the board fills up fast! Go for
+    chain merges and watch your score soar! Features: Addictive number-merging gameplay
+    Minimalistic and colorful design'
+  enclosure:
+    url: https://img.gamemonetize.com/8aszfmel2cxh1dn7o3f9i9sksrck3aem/512x384.jpg
+  guid: '33663'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: the-puzzle-box-challenge
+  title: The Puzzle Box Challenge
+- category:
+  - Clicker
+  description: In The Best Warrior, you start as a humble peasant with one goal&amp;mdash;to
+    become the greatest warrior in the kingdom. Train by clicking on dummies to build
+    attack power, defeat enemies for gold, and unlock powerful skins to grow even
+    faster. Face epic bosses, collect timed chest rewards, and rise through multiple
+    levels. With nonstop action, upgrades, and progression, this free adventure clicker
+    game lets you prove your strength with every tap. Start your journey now and become
+    a legend!
+  enclosure:
+    url: https://img.gamemonetize.com/yoxy6vzt9nu1h0uqzgngm8a9vht6fgjk/512x384.jpg
+  guid: '33664'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: the-best-warrior
+  title: The Best Warrior
+- category:
+  - Shooting
+  description: FNAF Strike 2 is an intense first-person shooter game that throws you
+    into a terrifying battle for survival against hostile animatronics. Armed with
+    a wide variety of powerful weapons, you must fight your way through dark, eerie
+    corridors where danger lurks around every corner. Each level presents a new challenge,
+    as you explore creepy environments filled with jump scares and hidden threats
+    while trying to find the exit and make it out alive. Quick reflexes, smart weapon
+    choices, and constant vigilance are your keys to surviving the nightmare.
+  enclosure:
+    url: https://img.gamemonetize.com/fbbw9nepexo76ol7g11vkkl3gdptsihy/512x384.jpg
+  guid: '33665'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: fnaf-strike-2
+  title: FNAF Strike 2
+- category:
+  - Racing
+  description: Come to the colorful world of Fidget Pop Run. Begin a casual arcade
+    game. Race, jump, and pop colorful bubbles along the way. Choose the path to pass
+    according to your characters color. Increase your energy value. Watch out for
+    the wall or youll fail.
+  enclosure:
+    url: https://img.gamemonetize.com/5tlci5vfndoglmilwo1pmgnkbu51q9ph/512x384.jpg
+  guid: '33666'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:39'
+  pubDate: 'Sun, 13 Apr 2025 09:56:39 '
+  slug: fidget-pop-run
+  title: Fidget Pop Run
+- category:
+  - Sports
+  description: Start the game with 10 balls. Drag and release to shoot. Score without
+    touching the rim to earn extra balls. Aim for high scores to unlock helpful creatures.
+    Check the leaderboard to see how you compete with the top players. Special creatures
+    might pop up to lend assistance as you hit score milestones, adding a fun and
+    unpredictable twist.
+  enclosure:
+    url: https://img.gamemonetize.com/kyn5fpfwlh86jgcsff85trjsxntpva2i/512x384.jpg
+  guid: '33667'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: basketball-park
+  title: Basketball Park
+- category:
+  - Sports
+  description: 'In this game, you will grab your favorite basketball and will try
+    to score as many points as possible. All of the free throws will happen from different
+    angles and distances. Pick your favorite team and try to be the best player around!
+    There is a time limit, so you need to be quick. You have a total of 20 balls that
+    you can use. It&amp;rsquo;s no easy task, since you need to guess the angle and
+    strength that you need to hit. How to play: - Pick up the ball over the table.
+    - Press and hold left mouse button, when shooting, to increase the shooting force.
+    Force will show on the right indicator. - Shoot and try to get the most score
+    before time is over'
+  enclosure:
+    url: https://img.gamemonetize.com/zn51bpwab321ow86zhq55orvs30a9zkh/512x384.jpg
+  guid: '33668'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: basketball-arcade
+  title: Basketball Arcade
+- category:
+  - Puzzles
+  description: 'Tic Tac Toe Game - Description &amp;amp; Controls Game Description
+    This Tic Tac Toe game is a modern, interactive version of the classic two-player
+    strategy game. Players take turns marking X or O on a 3&amp;times;3 grid, aiming
+    to get three of their symbols in a row (horizontally, vertically, or diagonally).
+    Game Features: Two-Player Mode (Player X vs. Player O) Score Tracking (Wins are
+    recorded) Winner Announcement (Popup when a player wins or its a draw) Responsive
+    Design (Works on mobile &amp;amp; desktop) Simple &amp;amp; Clean UI (Easy to
+    play)'
+  enclosure:
+    url: https://img.gamemonetize.com/vhwpg74ut6qx4jpq2zaun36b5083v3i4/512x384.jpg
+  guid: '33669'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: tic-tak-to-
+  title: 'tic tak to '
+- category:
+  - Puzzles
+  description: 'Dive into the exciting world of Sprunki monsters with our game, Sprunki
+    Memory Match: Monster Hunt Quest! Sharpen your memory skills as you match pairs
+    of Sprunki characters on the playing field. Keep track of the locations of the
+    adorable monsters and uncover their doubles before time runs out. But beware,
+    you have a limited number of steps to complete each level. Test your memory and
+    embark on a thrilling adventure with Sprunki Memory Match: Monster Hunt Quest!'
+  enclosure:
+    url: https://img.gamemonetize.com/2e7evz4wy3fpjo6snrauc8bof3xzk7kr/512x384.jpg
+  guid: '33670'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: sprunki-monster-hunt
+  title: Sprunki Monster Hunt
+- category:
+  - Arcade
+  description: 'Step into a fast-paced 2D action world where you are the lone hero
+    standing against waves of enemies! In this adrenaline-pumping arcade-style game,
+    you control a martial arts master who performs punches, kicks, and other powerful
+    moves with just a click of the mouse. Gameplay Highlights: Enemies appear randomly
+    from both left and right sides of the screen. React quickly and click to attack
+    with precision&amp;mdash;time your moves to survive! Watch out as the pace increases
+    and the enemies come faster! Clean and vibrant 2D visuals make the action feel
+    smooth and satisfying.'
+  enclosure:
+    url: https://img.gamemonetize.com/y0ntm5v0t7ghx4b8gcyp1nqgdprdh0xk/512x384.jpg
+  guid: '33671'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: zombie-fist
+  title: Zombie Fist
+- category:
+  - Puzzles
+  description: Draw Logic Puzzle is a captivating 2D puzzle game built with Unity
+    that challenges players to think creatively and solve levels by drawing lines,
+    shapes, and paths. Each puzzle presents a unique scenario where your drawings
+    become the solution&amp;mdash;whether its building a bridge, redirecting a fall,
+    or guiding the character safely to its target. With intuitive controls, brain-teasing
+    mechanics, and charming visuals, Draw Logic Puzzle offers a fun and engaging experience
+    for players of all ages.
+  enclosure:
+    url: https://img.gamemonetize.com/6lap1gr7cqfvd0ymcd722f1hmk7z806c/512x384.jpg
+  guid: '33672'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: draw-logic-puzzle
+  title: Draw Logic Puzzle
+- category:
   - Action
-  - Shooter
-  - Sci-Fi
-- title: Puzzle Master
-  link: https://example.com/games/puzzle-master
-  description: Test your logical thinking with increasingly difficult puzzles.
-  pubDate: '2025-04-11 09:55:08 +0000'
-  guid: game-003
-  image: https://via.placeholder.com/300x200/4CAF50/FFFFFF?text=Puzzle+Master
-  iframe_code: "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800'
-    height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>"
-  category:
-  - Puzzle
-  - Strategy
-  - Brain Teaser
+  description: Merge Toilet Skib Fight is an outlandish and action-packed game where
+    players control bizarre, larger-than-life characters engaged in a battle for dominance.
+    In this quirky, futuristic world, mechanical creatures with toilet-inspired designs
+    and humanoid features face off, unleashing powerful laser beams and outlandish
+    attacks. Web Dev &lt;a href='https://www.crazygamesonline.com/'&gt;https://www.crazygamesonline.com/&lt;/a&gt;
+  enclosure:
+    url: https://img.gamemonetize.com/9jxku3aopigj8bsx576xi8qo1kfpqg4v/512x384.jpg
+  guid: '33673'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: merge-toilet-skib-fight
+  title: Merge Toilet Skib Fight
+- category:
+  - Adventure
+  description: You are invited to join Hole And Fill Collect Master. Here, you will
+    play as a magical &amp;ldquo;hole&amp;rdquo;, by devouring and collecting all
+    kinds of food to fill yourselves and become more and more powerful. The goal is
+    to collect as much food in the scene as possible, such as cakes, meat, donuts,
+    etc. The bigger the item you eat, the faster you upgrade.
+  enclosure:
+    url: https://img.gamemonetize.com/177jps772f21yuf2qfupbj881figqak7/512x384.jpg
+  guid: '33674'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: hole-and-fill-collect-master
+  title: Hole And Fill Collect Master
+- category:
+  - Arcade
+  description: Agent 007 must survive. He needs to collect money and defeat all the
+    Skibidi enemies. The enemies come from everywhere. He must have the most powerful
+    bullets and defeat them all. He can play through all the challenges, but theres
+    one thing he forgets &amp;mdash; if he doesn&amp;rsquo;t upgrade himself, he will
+    lose. Whether youre a chef or Santa Claus, grab your weapon and shoot all the
+    Skibidi enemies!
+  enclosure:
+    url: https://img.gamemonetize.com/4b5t5xufy19syzomrxd0rgnbkibpb6oy/512x384.jpg
+  guid: '33675'
+  iframe: ''
+  last_updated: '2025-04-13 09:56:38'
+  pubDate: 'Sun, 13 Apr 2025 09:56:38 '
+  slug: 007-cameraman-enemy-skibidi
+  title: 007 Cameraman Enemy Skibidi

@@ -3,7 +3,7 @@
   <!-- Halaman Utama -->
   <url>
     <loc>http://0.0.0.0:5000/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,25 +11,25 @@
   <!-- Halaman Penting -->
   <url>
     <loc>http://0.0.0.0:5000/tags/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://0.0.0.0:5000/about-us/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://0.0.0.0:5000/privacy-policy/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://0.0.0.0:5000/terms-of-service/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -40,22 +40,162 @@
   <!-- Game Posts -->
   
   <url>
-    <loc>http://0.0.0.0:5000/pixel-adventure/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <loc>http://0.0.0.0:5000/stunt-car-extreme/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:5000/space-shooter/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <loc>http://0.0.0.0:5000/tower-defense-kingdom-wars/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://0.0.0.0:5000/puzzle-master/</loc>
-    <lastmod>2025-04-13T09:55:12+00:00</lastmod>
+    <loc>http://0.0.0.0:5000/monster-blocks/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/sprunki-456-squid-cookie/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/click-energy/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/grass-ranch/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/avatar-life-my-town/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/merge-diamonds-treasure/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/color-hoop-sort-puzzle/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/the-puzzle-box-challenge/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/the-best-warrior/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/fnaf-strike-2/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/fidget-pop-run/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/basketball-park/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/basketball-arcade/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/tic-tak-to/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/sprunki-monster-hunt/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/zombie-fist/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/draw-logic-puzzle/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/merge-toilet-skib-fight/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/hole-and-fill-collect-master/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://0.0.0.0:5000/007-cameraman-enemy-skibidi/</loc>
+    <lastmod>2025-04-13T09:57:17+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

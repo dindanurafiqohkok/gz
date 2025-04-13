@@ -51,30 +51,65 @@ def fetch_games_from_api():
         print(f"Mengambil data dari API: {api_url}")
         with urllib.request.urlopen(api_url) as response:
             raw_data = response.read().decode('utf-8')
-            data = json.loads(raw_data)
             
-            # Periksa struktur data yang sebenarnya dari API
-            if isinstance(data, dict) and 'channel' in data and 'item' in data['channel']:
-                # Format standar JSON RSS
-                items = data['channel']['item']
-                print(f"Format RSS JSON standar ditemukan, {len(items)} game ditemukan")
-                return items
-            elif isinstance(data, dict) and 'rss' in data and 'channel' in data['rss']:
-                # Format alternatif dengan namespace rss
-                items = data['rss']['channel']['item']
-                print(f"Format RSS/channel ditemukan, {len(items)} game ditemukan")
-                return items
-            else:
-                # Struktur lain, coba deteksi item dari kunci yang ada
-                print(f"Format tidak dikenal, mencoba parse: {list(data.keys())}")
-                if isinstance(data, list):
-                    print(f"Data adalah array dengan {len(data)} item")
-                    return data  
+            # Sebelum mencoba parsing JSON, cetak sebagian kecil dari respon mentah
+            # untuk membantu debug format API
+            print(f"Contoh data API (50 karakter pertama): {raw_data[:50]}...")
+            
+            try:
+                data = json.loads(raw_data)
+                
+                # Handle berbagai kemungkinan format data JSON
+                if isinstance(data, dict):
+                    # Format 1: {"channel": {"item": [...]}}
+                    if 'channel' in data and 'item' in data['channel']:
+                        items = data['channel']['item']
+                        print(f"Format RSS JSON standar ditemukan, {len(items)} game ditemukan")
+                        return items
+                    
+                    # Format 2: {"rss": {"channel": {"item": [...]}}}
+                    elif 'rss' in data and isinstance(data['rss'], dict) and 'channel' in data['rss']:
+                        items = data['rss']['channel']['item']
+                        print(f"Format RSS/channel ditemukan, {len(items)} game ditemukan")
+                        return items
+                    
+                    # Format 3: {"items": [...]} or {"games": [...]}
+                    elif 'items' in data and isinstance(data['items'], list):
+                        print(f"Format items array ditemukan, {len(data['items'])} game ditemukan")
+                        return data['items']
+                    elif 'games' in data and isinstance(data['games'], list):
+                        print(f"Format games array ditemukan, {len(data['games'])} game ditemukan")
+                        return data['games']
+                    
+                    # Format tak dikenal, coba cari kunci yang berisi data game
+                    else:
+                        print(f"Format tidak dikenal, kunci yang tersedia: {list(data.keys())}")
+                        # Coba temukan kunci yang berisi array
+                        for key, value in data.items():
+                            if isinstance(value, list) and len(value) > 0:
+                                print(f"Mencoba gunakan array dari kunci '{key}', {len(value)} item")
+                                return value
+                        
+                        print("Tidak dapat menemukan array game, gunakan data sampel")
+                        return generate_sample_games()
+                
+                # Format 4: Langsung array dari game
+                elif isinstance(data, list):
+                    print(f"Respon adalah array langsung dengan {len(data)} game")
+                    return data
+                
                 else:
-                    # Jika tidak ada format yang cocok, buat contoh untuk pengembangan
-                    print("Tidak dapat menentukan format API, menggunakan data sampel")
+                    print(f"Respons tidak dikenali (tipe: {type(data)}), gunakan data sampel")
                     return generate_sample_games()
-            
+                    
+            except json.JSONDecodeError as je:
+                print(f"Format JSON tidak valid: {je}")
+                
+                # Coba deteksi format XML yang dikirim sebagai JSON
+                if "<rss" in raw_data or "<channel>" in raw_data:
+                    print("Respon tampaknya dalam format XML bukan JSON. Gunakan data sampel.")
+                return generate_sample_games()
+                
     except Exception as e:
         print(f"Error mengambil data dari API: {e}")
         return generate_sample_games()
@@ -114,24 +149,50 @@ def generate_sample_games():
         }
     ]
 
-def save_games_to_database(games):
+def save_games_to_database(games, limit=20):
     """
-    Menyimpan data game ke database
+    Menyimpan data game ke database dengan batas jumlah yang diproses
+    
+    Args:
+        games: List game dari API
+        limit: Jumlah maksimum game yang akan diproses (default: 20)
     """
     if not games:
         print("Tidak ada game untuk disimpan")
         return
     
+    # Batasi jumlah game yang diproses untuk menghindari timeout
+    limited_games = games[:limit]
+    print(f"Membatasi proses hingga {limit} game dari total {len(games)} game")
+    
     conn = psycopg2.connect(DATABASE_URL)
     cur = conn.cursor()
     
-    for game in games:
+    for game in limited_games:
+        # Handle berbagai format field sesuai dengan API
         title = game.get('title', '')
-        guid = game.get('guid', '')
+        
+        # ID bisa dalam beberapa format berbeda dari API
+        guid = game.get('guid', '') or game.get('id', '') or str(hash(title))
+        
         description = game.get('description', '')
-        image_url = game.get('enclosure', {}).get('url', '')
-        published_date = game.get('pubDate', '')
-        iframe_code = game.get('iframe', '')
+        
+        # Coba beberapa kemungkinan lokasi URL gambar
+        image_url = None
+        if game.get('enclosure') and isinstance(game.get('enclosure'), dict):
+            image_url = game.get('enclosure', {}).get('url', '')
+        elif game.get('image_url'):
+            image_url = game.get('image_url')
+        elif game.get('thumb'):
+            image_url = game.get('thumb')
+        elif game.get('thumbnail'):
+            image_url = game.get('thumbnail')
+        
+        # Coba beberapa kemungkinan format tanggal
+        published_date = game.get('pubDate', '') or game.get('published_date', '') or game.get('date', '')
+        
+        # Coba beberapa kemungkinan format iframe
+        iframe_code = game.get('iframe', '') or game.get('iframe_code', '') or game.get('embed', '')
         
         # Membuat slug dari judul
         slug = title.lower().replace(' ', '-').replace('/', '-')
