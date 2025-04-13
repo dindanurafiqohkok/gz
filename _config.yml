@@ -10,8 +10,9 @@ permalink: /:title/
 
 # Plugins
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+
+# Sitemap akan dibuat melalui plugin kustom
 
 # Collections
 collections:

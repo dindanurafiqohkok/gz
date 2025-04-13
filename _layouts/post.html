@@ -5,11 +5,12 @@ layout: default
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
         
-        {% if page.featured_image %}
         <div class="featured-image">
-            <img src="{{ page.featured_image }}" alt="{{ page.title }}">
+            <img src="{{ page.featured_image | default: '/assets/images/image-not-found.svg' }}" 
+                 alt="{{ page.title }}" 
+                 loading="lazy"
+                 onerror="this.src='/assets/images/image-not-found.svg'">
         </div>
-        {% endif %}
         
         <div class="post-meta">
             <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
@@ -32,13 +33,23 @@ layout: default
             </div>
         {% endif %}
         
-        {% if page.iframe_code %}
-            <div class="game-container">
-                {{ page.iframe_code }}
-            </div>
-        {% elsif page.iframe %}
-            <div class="game-container">
-                {{ page.iframe }}
+        {% if page.iframe_code or page.iframe %}
+            <div class="game-container" id="game-frame-container">
+                <div class="game-loading">
+                    <p>Loading Game...</p>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        setTimeout(function() {
+                            var container = document.getElementById('game-frame-container');
+                            {% if page.iframe_code %}
+                                container.innerHTML = '{{ page.iframe_code | replace: "'", "\\'" }}';
+                            {% elsif page.iframe %}
+                                container.innerHTML = '{{ page.iframe | replace: "'", "\\'" }}';
+                            {% endif %}
+                        }, 1000);
+                    });
+                </script>
             </div>
         {% endif %}
         
@@ -54,9 +65,11 @@ layout: default
                 {% if post.url != page.url %}
                 <li>
                     <a href="{{ post.url | relative_url }}">
-                        {% if post.featured_image %}
-                        <img src="{{ post.featured_image }}" alt="{{ post.title }}">
-                        {% endif %}
+                        <img src="{{ post.featured_image | default: '/assets/images/image-not-found.svg' }}" 
+                             alt="{{ post.title }}"
+                             loading="lazy"
+                             onerror="this.src='/assets/images/image-not-found.svg'"
+                             width="150" height="100">
                         <h3>{{ post.title }}</h3>
                     </a>
                 </li>

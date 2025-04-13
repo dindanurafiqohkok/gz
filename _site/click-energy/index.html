@@ -41,7 +41,7 @@
   "description": "Click Energy is a fast-paced casual game where every second counts! Tap on the appearing objects as quickly as possible &amp;mdash; but watch out for the red...",
   "image": "https://img.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/512x384.jpg",
   "datePublished": "2025-04-13T09:56:39+00:00",
-  "dateModified": "2025-04-13T10:00:24+00:00",
+  "dateModified": "2025-04-13T10:09:51+00:00",
   "author": {
     "@type": "Organization",
     "name": "Game Monetize Portal"
@@ -67,7 +67,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <meta name="article:published_time" content="2025-04-13T09:56:39+00:00">
-<meta name="article:modified_time" content="2025-04-13T10:00:24+00:00">
+<meta name="article:modified_time" content="2025-04-13T10:09:51+00:00">
 
 
 
@@ -109,11 +109,12 @@
     <header class="post-header">
         <h1 class="post-title">Click Energy</h1>
         
-        
         <div class="featured-image">
-            <img src="https://img.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/512x384.jpg" alt="Click Energy">
+            <img src="https://img.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/512x384.jpg" 
+                 alt="Click Energy" 
+                 loading="lazy"
+                 onerror="this.src='/assets/images/image-not-found.svg'">
         </div>
-        
         
         <div class="post-meta">
             <span class="date">April 13, 2025</span>
@@ -141,8 +142,20 @@
         
         
         
-            <div class="game-container">
-                <iframe frameborder="0" src="https://html5.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/" width="100%" height="100%" scrolling="no" allow="autoplay" allowfullscreen></iframe>
+            <div class="game-container" id="game-frame-container">
+                <div class="game-loading">
+                    <p>Loading Game...</p>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        setTimeout(function() {
+                            var container = document.getElementById('game-frame-container');
+                            
+                                container.innerHTML = '<iframe frameborder="0" src="https://html5.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/" width="100%" height="100%" scrolling="no" allow="autoplay" allowfullscreen></iframe>';
+                            
+                        }, 1000);
+                    });
+                </script>
             </div>
         
         
@@ -172,33 +185,39 @@
                 
                 
                 <li>
-                    <a href="/basketball-park/">
-                        
-                        <img src="https://img.gamemonetize.com/kyn5fpfwlh86jgcsff85trjsxntpva2i/512x384.jpg" alt="Basketball Park">
-                        
-                        <h3>Basketball Park</h3>
+                    <a href="/skibidi-toilet-sharp-shooter/">
+                        <img src="https://img.gamemonetize.com/x7pi2xioc5nr43wg4xclivtz3eyfr53d/512x384.jpg" 
+                             alt="Skibidi Toilet Sharp Shooter"
+                             loading="lazy"
+                             onerror="this.src='/assets/images/image-not-found.svg'"
+                             width="150" height="100">
+                        <h3>Skibidi Toilet Sharp Shooter</h3>
                     </a>
                 </li>
                 
                 
                 
                 <li>
-                    <a href="/draw-logic-puzzle/">
-                        
-                        <img src="https://img.gamemonetize.com/6lap1gr7cqfvd0ymcd722f1hmk7z806c/512x384.jpg" alt="Draw Logic Puzzle">
-                        
-                        <h3>Draw Logic Puzzle</h3>
+                    <a href="/basketball-arcade/">
+                        <img src="https://img.gamemonetize.com/zn51bpwab321ow86zhq55orvs30a9zkh/512x384.jpg" 
+                             alt="Basketball Arcade"
+                             loading="lazy"
+                             onerror="this.src='/assets/images/image-not-found.svg'"
+                             width="150" height="100">
+                        <h3>Basketball Arcade</h3>
                     </a>
                 </li>
                 
                 
                 
                 <li>
-                    <a href="/fidget-pop-run/">
-                        
-                        <img src="https://img.gamemonetize.com/5tlci5vfndoglmilwo1pmgnkbu51q9ph/512x384.jpg" alt="Fidget Pop Run">
-                        
-                        <h3>Fidget Pop Run</h3>
+                    <a href="/sprunki-monster-hunt/">
+                        <img src="https://img.gamemonetize.com/2e7evz4wy3fpjo6snrauc8bof3xzk7kr/512x384.jpg" 
+                             alt="Sprunki Monster Hunt"
+                             loading="lazy"
+                             onerror="this.src='/assets/images/image-not-found.svg'"
+                             width="150" height="100">
+                        <h3>Sprunki Monster Hunt</h3>
                     </a>
                 </li>
                 
