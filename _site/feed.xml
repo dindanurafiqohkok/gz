@@ -5,8 +5,8 @@
     <description>Your source for HTML5 games and gaming content</description>
     <link>http://0.0.0.0:5000/</link>
     <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Apr 2025 09:59:27 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Apr 2025 09:59:27 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Apr 2025 10:00:24 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Apr 2025 10:00:24 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -61,7 +61,21 @@
         <link>http://0.0.0.0:5000/sprunki-456-squid-cookie/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/sprunki-456-squid-cookie/</guid>
         
+        <category>2 Player</category>
+        
+        <category>2 Player Games</category>
+        
+        <category>2D</category>
+        
+        <category>Adventure</category>
+        
         <category>Arcade</category>
+        
+        <category>Sprunki</category>
+        
+        <category>squid</category>
+        
+        <category>squidgame</category>
         
       </item>
     
@@ -72,7 +86,11 @@
         <link>http://0.0.0.0:5000/click-energy/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/click-energy/</guid>
         
+        <category>Click</category>
+        
         <category>Hypercasual</category>
+        
+        <category>Pixel</category>
         
       </item>
     
@@ -83,7 +101,13 @@
         <link>http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</guid>
         
-        <category>Arcade</category>
+        <category>Shooter</category>
+        
+        <category>Skibidi</category>
+        
+        <category>Skibidi Toilet</category>
+        
+        <category>Stickman</category>
         
       </item>
     
@@ -94,7 +118,11 @@
         <link>http://0.0.0.0:5000/grass-ranch/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/grass-ranch/</guid>
         
-        <category>Hypercasual</category>
+        <category>Animal</category>
+        
+        <category>cut</category>
+        
+        <category>Relaxation</category>
         
       </item>
     
@@ -105,7 +133,13 @@
         <link>http://0.0.0.0:5000/avatar-life-my-town/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/avatar-life-my-town/</guid>
         
-        <category>Girls</category>
+        <category>Cook</category>
+        
+        <category>Family</category>
+        
+        <category>Fun</category>
+        
+        <category>Simulator</category>
         
       </item>
     
@@ -116,7 +150,21 @@
         <link>http://0.0.0.0:5000/merge-diamonds-treasure/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/merge-diamonds-treasure/</guid>
         
-        <category>Hypercasual</category>
+        <category>1 Player</category>
+        
+        <category>2048</category>
+        
+        <category>2D</category>
+        
+        <category>Android</category>
+        
+        <category>Ball</category>
+        
+        <category>Brain</category>
+        
+        <category>Game</category>
+        
+        <category>Logic</category>
         
       </item>
     
@@ -127,7 +175,15 @@
         <link>http://0.0.0.0:5000/color-hoop-sort-puzzle/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/color-hoop-sort-puzzle/</guid>
         
-        <category>Puzzles</category>
+        <category>Clicker</category>
+        
+        <category>Color</category>
+        
+        <category>Puzzle</category>
+        
+        <category>sort</category>
+        
+        <category>sorting</category>
         
       </item>
     
@@ -138,7 +194,21 @@
         <link>http://0.0.0.0:5000/the-puzzle-box-challenge/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/the-puzzle-box-challenge/</guid>
         
-        <category>Puzzles</category>
+        <category>1 Player</category>
+        
+        <category>Arcade</category>
+        
+        <category>Hypercasual</category>
+        
+        <category>Puzzle</category>
+        
+        <category>puzzleblock</category>
+        
+        <category>unity</category>
+        
+        <category>unity games</category>
+        
+        <category>Unity3D</category>
         
       </item>
     
@@ -149,7 +219,33 @@
         <link>http://0.0.0.0:5000/the-best-warrior/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/the-best-warrior/</guid>
         
+        <category>Action</category>
+        
+        <category>Adventure</category>
+        
+        <category>attack</category>
+        
+        <category>Battle</category>
+        
+        <category>Best</category>
+        
+        <category>Best Games</category>
+        
+        <category>Click</category>
+        
         <category>Clicker</category>
+        
+        <category>Fighting</category>
+        
+        <category>Knight</category>
+        
+        <category>Pixel</category>
+        
+        <category>RPG</category>
+        
+        <category>Sword</category>
+        
+        <category>Warrior</category>
         
       </item>
     
@@ -160,7 +256,27 @@
         <link>http://0.0.0.0:5000/fnaf-strike-2/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/fnaf-strike-2/</guid>
         
+        <category>3D</category>
+        
+        <category>3D Games</category>
+        
+        <category>Action</category>
+        
+        <category>CSGO</category>
+        
+        <category>First Person Shooter</category>
+        
+        <category>Horror</category>
+        
+        <category>Shoot</category>
+        
+        <category>Shoot &apos;Em Up</category>
+        
+        <category>Shooter</category>
+        
         <category>Shooting</category>
+        
+        <category>Unity3D</category>
         
       </item>
     
@@ -171,7 +287,11 @@
         <link>http://0.0.0.0:5000/fidget-pop-run/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/fidget-pop-run/</guid>
         
-        <category>Racing</category>
+        <category>Bubble</category>
+        
+        <category>Monster</category>
+        
+        <category>run</category>
         
       </item>
     
@@ -181,6 +301,18 @@
         <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
         <link>http://0.0.0.0:5000/basketball-park/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/basketball-park/</guid>
+        
+        <category>1 Player</category>
+        
+        <category>3D</category>
+        
+        <category>3D Games</category>
+        
+        <category>Ball</category>
+        
+        <category>Basketball</category>
+        
+        <category>Highscore</category>
         
         <category>Sports</category>
         
@@ -193,7 +325,11 @@
         <link>http://0.0.0.0:5000/basketball-arcade/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/basketball-arcade/</guid>
         
-        <category>Sports</category>
+        <category>Ball</category>
+        
+        <category>Basketball</category>
+        
+        <category>Sport</category>
         
       </item>
     
@@ -204,7 +340,9 @@
         <link>http://0.0.0.0:5000/tic-tak-to/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/tic-tak-to/</guid>
         
-        <category>Puzzles</category>
+        <category>2 Player</category>
+        
+        <category>Stickman</category>
         
       </item>
     
@@ -215,7 +353,17 @@
         <link>http://0.0.0.0:5000/sprunki-monster-hunt/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/sprunki-monster-hunt/</guid>
         
-        <category>Puzzles</category>
+        <category>Dancing</category>
+        
+        <category>Fun</category>
+        
+        <category>Funny</category>
+        
+        <category>Kids</category>
+        
+        <category>Memory</category>
+        
+        <category>Puzzle</category>
         
       </item>
     
@@ -226,7 +374,9 @@
         <link>http://0.0.0.0:5000/zombie-fist/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/zombie-fist/</guid>
         
-        <category>Arcade</category>
+        <category>Arena</category>
+        
+        <category>Battle</category>
         
       </item>
     
@@ -237,7 +387,13 @@
         <link>http://0.0.0.0:5000/draw-logic-puzzle/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/draw-logic-puzzle/</guid>
         
-        <category>Puzzles</category>
+        <category>Casual</category>
+        
+        <category>Hypercasual</category>
+        
+        <category>Puzzle</category>
+        
+        <category>puzzleblock</category>
         
       </item>
     
