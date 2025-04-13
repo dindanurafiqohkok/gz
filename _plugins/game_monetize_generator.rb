@@ -31,7 +31,7 @@ module Jekyll
                 "pubDate" => Time.now.to_s,
                 "guid" => "game-001",
                 "image" => "https://via.placeholder.com/300x200/00CED1/FFFFFF?text=Pixel+Adventure",
-                "iframe_code" => "<iframe src='https://via.placeholder.com/800x600/00CED1/FFFFFF?text=Pixel+Adventure+Game' width='800' height='600' frameborder='0' allowfullscreen></iframe>",
+                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
                 "category" => ["Adventure", "Arcade", "Pixel Art"]
               },
               {
@@ -41,7 +41,7 @@ module Jekyll
                 "pubDate" => (Time.now - 86400).to_s,
                 "guid" => "game-002",
                 "image" => "https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Space+Shooter",
-                "iframe_code" => "<iframe src='https://via.placeholder.com/800x600/FF5733/FFFFFF?text=Space+Shooter+Game' width='800' height='600' frameborder='0' allowfullscreen></iframe>",
+                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
                 "category" => ["Action", "Shooter", "Sci-Fi"]
               },
               {
@@ -51,7 +51,7 @@ module Jekyll
                 "pubDate" => (Time.now - 172800).to_s,
                 "guid" => "game-003",
                 "image" => "https://via.placeholder.com/300x200/4CAF50/FFFFFF?text=Puzzle+Master",
-                "iframe_code" => "<iframe src='https://via.placeholder.com/800x600/4CAF50/FFFFFF?text=Puzzle+Master+Game' width='800' height='600' frameborder='0' allowfullscreen></iframe>",
+                "iframe_code" => "<iframe src='https://www.gamemonetize.com/iframe/html5-game' width='800' height='600' frameborder='0' scrolling='no' allow='autoplay' allowfullscreen></iframe>",
                 "category" => ["Puzzle", "Strategy", "Brain Teaser"]
               }
             ]
