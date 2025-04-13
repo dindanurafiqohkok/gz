@@ -2,7 +2,7 @@
 - title: Pixel Adventure
   link: https://example.com/games/pixel-adventure
   description: An exciting pixel art adventure game where you explore mysterious worlds.
-  pubDate: '2025-04-13 09:32:10 +0000'
+  pubDate: '2025-04-13 09:32:24 +0000'
   guid: game-001
   image: https://via.placeholder.com/300x200/00CED1/FFFFFF?text=Pixel+Adventure
   iframe_code: "<iframe src='https://via.placeholder.com/800x600/00CED1/FFFFFF?text=Pixel+Adventure+Game'
@@ -15,7 +15,7 @@
   link: https://example.com/games/space-shooter
   description: Defend your space station from waves of alien invaders in this action-packed
     shooter.
-  pubDate: '2025-04-12 09:32:10 +0000'
+  pubDate: '2025-04-12 09:32:24 +0000'
   guid: game-002
   image: https://via.placeholder.com/300x200/FF5733/FFFFFF?text=Space+Shooter
   iframe_code: "<iframe src='https://via.placeholder.com/800x600/FF5733/FFFFFF?text=Space+Shooter+Game'
@@ -27,7 +27,7 @@
 - title: Puzzle Master
   link: https://example.com/games/puzzle-master
   description: Test your logical thinking with increasingly difficult puzzles.
-  pubDate: '2025-04-11 09:32:10 +0000'
+  pubDate: '2025-04-11 09:32:24 +0000'
   guid: game-003
   image: https://via.placeholder.com/300x200/4CAF50/FFFFFF?text=Puzzle+Master
   iframe_code: "<iframe src='https://via.placeholder.com/800x600/4CAF50/FFFFFF?text=Puzzle+Master+Game'
