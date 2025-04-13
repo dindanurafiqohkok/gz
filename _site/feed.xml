@@ -5,14 +5,14 @@
     <description>Your source for HTML5 games and gaming content</description>
     <link>http://0.0.0.0:5000/</link>
     <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Apr 2025 09:43:20 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Apr 2025 09:43:20 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Apr 2025 09:46:31 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Apr 2025 09:46:31 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Pixel Adventure</title>
         <description>An exciting pixel art adventure game where you explore mysterious worlds.</description>
-        <pubDate>Sun, 13 Apr 2025 09:43:20 +0000</pubDate>
+        <pubDate>Sun, 13 Apr 2025 09:46:31 +0000</pubDate>
         <link>http://0.0.0.0:5000/pixel-adventure/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/pixel-adventure/</guid>
         
@@ -27,7 +27,7 @@
       <item>
         <title>Space Shooter</title>
         <description>Defend your space station from waves of alien invaders in this action-packed shooter.</description>
-        <pubDate>Sat, 12 Apr 2025 09:43:20 +0000</pubDate>
+        <pubDate>Sat, 12 Apr 2025 09:46:31 +0000</pubDate>
         <link>http://0.0.0.0:5000/space-shooter/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/space-shooter/</guid>
         
@@ -42,7 +42,7 @@
       <item>
         <title>Puzzle Master</title>
         <description>Test your logical thinking with increasingly difficult puzzles.</description>
-        <pubDate>Fri, 11 Apr 2025 09:43:20 +0000</pubDate>
+        <pubDate>Fri, 11 Apr 2025 09:46:31 +0000</pubDate>
         <link>http://0.0.0.0:5000/puzzle-master/</link>
         <guid isPermaLink="true">http://0.0.0.0:5000/puzzle-master/</guid>
         
