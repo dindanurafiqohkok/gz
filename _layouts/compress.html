@@ -1,0 +1,39 @@
+---
+# Jekyll layout yang mengompres HTML - versi sederhana
+---
+
+{% capture _content %}{{ content }}{% endcapture %}
+
+{% comment %}
+Menghapus komentar HTML
+{% endcomment %}
+{% if site.compress_html.comments %}
+  {% assign _comments = _content | split: "<!-- " %}
+  {% assign _content = _comments[0] %}
+  {% for _comment in _comments %}
+    {% if forloop.first %}{% continue %}{% endif %}
+    {% assign _commentData = _comment | split: "-->" %}
+    {% if _commentData.size > 1 %}
+      {% capture _content %}{{ _content }}{{ _commentData[1] }}{% endcapture %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% comment %}
+Menghapus whitespace di awal dan akhir
+{% endcomment %}
+{% assign _content = _content | strip %}
+
+{% comment %}
+Menggabungkan whitespace berlebih
+{% endcomment %}
+{% assign _newlines = _content | newline_to_br | split: "<br />" %}
+{% assign _content = "" %}
+{% for _line in _newlines %}
+  {% assign _trimmed = _line | strip %}
+  {% if _trimmed != "" %}
+    {% capture _content %}{{ _content }}{{ _line | strip | append: " " }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+
+{{ _content }}

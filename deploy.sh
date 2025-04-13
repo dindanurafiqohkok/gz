@@ -1,71 +1,72 @@
 #!/bin/bash
 
-# Script untuk deploy otomatis ke GitHub Pages
-# Dijalankan setiap 40 menit via cron
+# Script untuk melakukan build dan deploy ke GitHub Pages
 
-SITE_REPO_PATH=$(pwd)
-DEPLOY_REPO_PATH="$SITE_REPO_PATH/_deploy"
-DEPLOY_BRANCH="gh-pages"
-GITHUB_REPO_URL=${GITHUB_REPO_URL:-"https://github.com/yourusername/yourgamerepo.git"}
-
-echo "===== Memulai deploy pada $(date) ====="
-
-# Pertama, refresh konten dari GameMonetize API
-bash refresh_content.sh
-
-# Buat folder deploy jika belum ada
-if [ ! -d "$DEPLOY_REPO_PATH" ]; then
-    echo "Membuat folder deploy baru..."
-    mkdir -p "$DEPLOY_REPO_PATH"
-    cd "$DEPLOY_REPO_PATH"
-    git init
-    git remote add origin $GITHUB_REPO_URL
-    git checkout -b $DEPLOY_BRANCH
-    cd "$SITE_REPO_PATH"
-else
-    echo "Menggunakan folder deploy yang sudah ada..."
-    cd "$DEPLOY_REPO_PATH"
-    git fetch origin
-    git checkout $DEPLOY_BRANCH
-    cd "$SITE_REPO_PATH"
+# Verifikasi git tersedia
+if ! command -v git &> /dev/null; then
+    echo "Git tidak terinstal. Silakan install git terlebih dahulu."
+    exit 1
 fi
 
-# Membangun situs dengan Jekyll
-echo "Membangun situs dengan Jekyll..."
+# Verifikasi berada di direktori repo git
+if [ ! -d ".git" ]; then
+    echo "Tidak berada di direktori repo git. Silakan jalankan script ini dari root direktori repo."
+    exit 1
+fi
+
+# Verifikasi cabang utama (main atau master)
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$CURRENT_BRANCH" != "main" ] && [ "$CURRENT_BRANCH" != "master" ]; then
+    echo "Anda tidak berada di cabang main atau master. Silakan checkout ke cabang utama."
+    echo "Gunakan: git checkout main"
+    exit 1
+fi
+
+# Pastikan perubahan terbaru sudah di-commit dan push
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Ada perubahan yang belum di-commit. Silakan commit perubahan terlebih dahulu."
+    exit 1
+fi
+
+# Update konten
+echo "Memperbarui konten dari API..."
+./refresh_content.sh
+
+# Build site
+echo "Building site with Jekyll..."
 JEKYLL_ENV=production bundle exec jekyll build
 
-# Menyalin hasil build ke folder deploy
-echo "Menyalin hasil build ke folder deploy..."
-rsync -av --delete "$SITE_REPO_PATH/_site/" "$DEPLOY_REPO_PATH/"
-
-# Membuat CNAME file jika perlu
-if [ ! -z "$CUSTOM_DOMAIN" ]; then
-    echo "$CUSTOM_DOMAIN" > "$DEPLOY_REPO_PATH/CNAME"
-    echo "CNAME diatur ke $CUSTOM_DOMAIN"
-fi
-
-# Buat file .nojekyll untuk menghindari proses Jekyll di GitHub Pages
-touch "$DEPLOY_REPO_PATH/.nojekyll"
-
-# Membuat commit dan push ke GitHub
-cd "$DEPLOY_REPO_PATH"
-git add -A
-git commit -m "Deploy otomatis pada $(date)"
-
-# Push jika ada perubahan dan kredensial GitHub tersedia
-if [ $? -eq 0 ]; then
-    if [ ! -z "$GITHUB_TOKEN" ]; then
-        echo "Menggunakan GITHUB_TOKEN untuk autentikasi..."
-        git remote set-url origin "https://x-access-token:$GITHUB_TOKEN@${GITHUB_REPO_URL#https://}"
+# Deploy ke GitHub Pages (cabang gh-pages)
+echo "Deploying ke GitHub Pages..."
+if [ -d "_site" ]; then
+    if git show-ref --verify --quiet refs/heads/gh-pages; then
+        git checkout gh-pages
+    else
+        git checkout --orphan gh-pages
+        git rm -rf .
+        echo "Cabang gh-pages dibuat."
     fi
-    
-    echo "Mempush perubahan ke branch $DEPLOY_BRANCH..."
-    git push origin $DEPLOY_BRANCH
-    
-    echo "Situs berhasil di-deploy pada $(date)"
-else
-    echo "Tidak ada perubahan untuk di-deploy"
-fi
 
-cd "$SITE_REPO_PATH"
-echo "===== Deploy selesai pada $(date) ====="
+    # Salin konten _site ke root direktori cabang gh-pages
+    cp -R _site/* .
+    
+    # Hapus _site karena sudah tidak diperlukan
+    rm -rf _site
+
+    # Tambahkan semua file ke git
+    git add .
+    
+    # Commit perubahan
+    git commit -m "Site build at $(date)"
+    
+    # Push perubahan ke GitHub
+    git push origin gh-pages
+    
+    # Kembali ke cabang utama
+    git checkout "$CURRENT_BRANCH"
+    
+    echo "Deploy selesai! Situs Anda sekarang tersedia di https://username.github.io/reponame/"
+else
+    echo "Direktori _site tidak ditemukan. Build Jekyll gagal?"
+    exit 1
+fi

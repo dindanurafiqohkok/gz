@@ -3,399 +3,312 @@
   <channel>
     <title>Game Monetize Portal</title>
     <description>Your source for HTML5 games and gaming content</description>
-    <link>http://0.0.0.0:5000/</link>
+    <link>http://0.0.0.0:5000</link>
     <atom:link href="http://0.0.0.0:5000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Apr 2025 10:09:51 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Apr 2025 10:09:51 +0000</lastBuildDate>
-    <generator>Jekyll v4.4.1</generator>
-    
-      <item>
-        <title>Stunt Car Extreme</title>
-        <description>Drive through challenging tracks and perform stunts with your car in this exciting racing game.</description>
-        <pubDate>Sun, 13 Apr 2025 12:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:5000/stunt-car-extreme/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/stunt-car-extreme/</guid>
-        
-        <category>racing</category>
-        
-        <category>action</category>
-        
-        <category>stunts</category>
-        
-      </item>
-    
-      <item>
-        <title>Tower Defense Kingdom Wars</title>
-        <description>Defend your kingdom against waves of enemies by strategically placing towers and upgrading your defenses.</description>
-        <pubDate>Sun, 13 Apr 2025 11:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:5000/tower-defense-kingdom-wars/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/tower-defense-kingdom-wars/</guid>
-        
-        <category>strategy</category>
-        
-        <category>tower defense</category>
-        
-        <category>war</category>
-        
-      </item>
-    
-      <item>
-        <title>Monster Blocks</title>
-        <description>Connect matching monster blocks to clear the board and progress through increasingly challenging puzzles.</description>
-        <pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:5000/monster-blocks/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/monster-blocks/</guid>
-        
-        <category>puzzle</category>
-        
-        <category>casual</category>
-        
-        <category>blocks</category>
-        
-      </item>
-    
-      <item>
-        <title>Sprunki 456 Squid Cookie</title>
-        <description>The Sprunki brothers have invaded the entire forest and theyre everywhere. You must help the turquoise and red-suited brothers to reach the cash register as quickly as possible. Help all the brothers. Collect the cookies and reach the cash register. Throw cookies at the Sprunki brothers and defeat them.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/sprunki-456-squid-cookie/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/sprunki-456-squid-cookie/</guid>
-        
-        <category>2 Player</category>
-        
-        <category>2 Player Games</category>
-        
-        <category>2D</category>
-        
-        <category>Adventure</category>
-        
-        <category>Arcade</category>
-        
-        <category>Sprunki</category>
-        
-        <category>squid</category>
-        
-        <category>squidgame</category>
-        
-      </item>
-    
-      <item>
-        <title>Click Energy</title>
-        <description>Click Energy is a fast-paced casual game where every second counts! Tap on the appearing objects as quickly as possible &amp;amp;mdash; but watch out for the red ones! Miss too many or click the wrong one, and it&amp;amp;rsquo;s game over. How many can you catch before time runs out?</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/click-energy/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/click-energy/</guid>
-        
-        <category>Click</category>
-        
-        <category>Hypercasual</category>
-        
-        <category>Pixel</category>
-        
-      </item>
-    
-      <item>
-        <title>Skibidi Toilet Sharp Shooter</title>
-        <description>Skibidi Toilet Sharp Shooter is an exciting and challenging shooting game that puts your precision and strategic skills to the test. In this game, you take control of the iconic Skibidi Toilet, tasked with eliminating waves of stickman enemies. However, this isn&amp;amp;rsquo;t just a simple shoot-&amp;amp;rsquo;em-up game&amp;amp;mdash;each level is designed to test your accuracy and decision-making, as you&amp;amp;rsquo;ll have a limited number of bullets to take out every stickman enemy in sight. At the start of each level, stickman enemies line up, waiting to be shot. While it may seem easy at first, the difficulty quickly ramps up as you progress. The stickmen may start moving, creating dist</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</guid>
-        
-        <category>Shooter</category>
-        
-        <category>Skibidi</category>
-        
-        <category>Skibidi Toilet</category>
-        
-        <category>Stickman</category>
-        
-      </item>
-    
-      <item>
-        <title>Grass Ranch</title>
-        <description>Grass Ranch is a super fun and relaxing casual game that makes you a true ranch grass-mowing master. If you like to complete simple and fun tasks in a cozy environment, then you cant miss this game. In this world of green grass, you will mow grass constantly. Keep mowing the lawn and feed some cute animals.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/grass-ranch/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/grass-ranch/</guid>
-        
-        <category>Animal</category>
-        
-        <category>cut</category>
-        
-        <category>Relaxation</category>
-        
-      </item>
-    
-      <item>
-        <title>Avatar Life My Town</title>
-        <description>Avatar Life: My Town game is a casual simulator game for kids. You can enjoy creating your sweet home stories! Meet fun family characters in the dollhouse game! Role-play house games and manage family life in your new home! You need to take good care of your character and prepare delicious food. Cooking a big meal.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/avatar-life-my-town/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/avatar-life-my-town/</guid>
-        
-        <category>Cook</category>
-        
-        <category>Family</category>
-        
-        <category>Fun</category>
-        
-        <category>Simulator</category>
-        
-      </item>
-    
-      <item>
-        <title>Merge Diamonds: Treasure!</title>
-        <description>Your task is to connect diamonds until you get the biggest one. Compete with friends and colleagues! In the game you have a game zone where diamonds fall and connect if they have the same color! Connect as many diamonds as possible to get the biggest one, collect points! Become the first on the leaderboard! The game has relaxing gameplay and beautiful graphics, play and relax!</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/merge-diamonds-treasure/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/merge-diamonds-treasure/</guid>
-        
-        <category>1 Player</category>
-        
-        <category>2048</category>
-        
-        <category>2D</category>
-        
-        <category>Android</category>
-        
-        <category>Ball</category>
-        
-        <category>Brain</category>
-        
-        <category>Game</category>
-        
-        <category>Logic</category>
-        
-      </item>
-    
-      <item>
-        <title>Color Hoop: Sort Puzzle</title>
-        <description>Welcome to Color Hoop: Sort Puzzle Game, the ultimate game of your sorting color and puzzle game solving skills! Immerse yourself in a world of vibrant colors and challenging puzzles, where your mission is to sort and organize many kinds of colorful hoops. This addictive and visually captivating game will keep you entertained for hours on end.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/color-hoop-sort-puzzle/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/color-hoop-sort-puzzle/</guid>
-        
-        <category>Clicker</category>
-        
-        <category>Color</category>
-        
-        <category>Puzzle</category>
-        
-        <category>sort</category>
-        
-        <category>sorting</category>
-        
-      </item>
-    
-      <item>
-        <title>The Puzzle Box Challenge</title>
-        <description>The Puzzle Box Challenge Get ready to test your brain with The Puzzle Box Challenge &amp;amp;ndash; the ultimate number-merging puzzle game! Slide, merge, and match identical numbers to create higher values and beat your high score. Every move counts as you try to clear the board, unlock combos, and strategize your way through endless merging fun! How to Play: Merge matching numbers to create a new one. Plan your moves wisely &amp;amp;ndash; the board fills up fast! Go for chain merges and watch your score soar! Features: Addictive number-merging gameplay Minimalistic and colorful design</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/the-puzzle-box-challenge/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/the-puzzle-box-challenge/</guid>
-        
-        <category>1 Player</category>
-        
-        <category>Arcade</category>
-        
-        <category>Hypercasual</category>
-        
-        <category>Puzzle</category>
-        
-        <category>puzzleblock</category>
-        
-        <category>unity</category>
-        
-        <category>unity games</category>
-        
-        <category>Unity3D</category>
-        
-      </item>
-    
-      <item>
-        <title>The Best Warrior</title>
-        <description>In The Best Warrior, you start as a humble peasant with one goal&amp;amp;mdash;to become the greatest warrior in the kingdom. Train by clicking on dummies to build attack power, defeat enemies for gold, and unlock powerful skins to grow even faster. Face epic bosses, collect timed chest rewards, and rise through multiple levels. With nonstop action, upgrades, and progression, this free adventure clicker game lets you prove your strength with every tap. Start your journey now and become a legend!</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/the-best-warrior/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/the-best-warrior/</guid>
-        
-        <category>Action</category>
-        
-        <category>Adventure</category>
-        
-        <category>attack</category>
-        
-        <category>Battle</category>
-        
-        <category>Best</category>
-        
-        <category>Best Games</category>
-        
-        <category>Click</category>
-        
-        <category>Clicker</category>
-        
-        <category>Fighting</category>
-        
-        <category>Knight</category>
-        
-        <category>Pixel</category>
-        
-        <category>RPG</category>
-        
-        <category>Sword</category>
-        
-        <category>Warrior</category>
-        
-      </item>
-    
-      <item>
-        <title>FNAF Strike 2</title>
-        <description>FNAF Strike 2 is an intense first-person shooter game that throws you into a terrifying battle for survival against hostile animatronics. Armed with a wide variety of powerful weapons, you must fight your way through dark, eerie corridors where danger lurks around every corner. Each level presents a new challenge, as you explore creepy environments filled with jump scares and hidden threats while trying to find the exit and make it out alive. Quick reflexes, smart weapon choices, and constant vigilance are your keys to surviving the nightmare.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/fnaf-strike-2/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/fnaf-strike-2/</guid>
-        
-        <category>3D</category>
-        
-        <category>3D Games</category>
-        
-        <category>Action</category>
-        
-        <category>CSGO</category>
-        
-        <category>First Person Shooter</category>
-        
-        <category>Horror</category>
-        
-        <category>Shoot</category>
-        
-        <category>Shoot &apos;Em Up</category>
-        
-        <category>Shooter</category>
-        
-        <category>Shooting</category>
-        
-        <category>Unity3D</category>
-        
-      </item>
-    
-      <item>
-        <title>Fidget Pop Run</title>
-        <description>Come to the colorful world of Fidget Pop Run. Begin a casual arcade game. Race, jump, and pop colorful bubbles along the way. Choose the path to pass according to your characters color. Increase your energy value. Watch out for the wall or youll fail.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
-        <link>http://0.0.0.0:5000/fidget-pop-run/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/fidget-pop-run/</guid>
-        
-        <category>Bubble</category>
-        
-        <category>Monster</category>
-        
-        <category>run</category>
-        
-      </item>
-    
-      <item>
-        <title>Basketball Park</title>
-        <description>Start the game with 10 balls. Drag and release to shoot. Score without touching the rim to earn extra balls. Aim for high scores to unlock helpful creatures. Check the leaderboard to see how you compete with the top players. Special creatures might pop up to lend assistance as you hit score milestones, adding a fun and unpredictable twist.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/basketball-park/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/basketball-park/</guid>
-        
-        <category>1 Player</category>
-        
-        <category>3D</category>
-        
-        <category>3D Games</category>
-        
-        <category>Ball</category>
-        
-        <category>Basketball</category>
-        
-        <category>Highscore</category>
-        
-        <category>Sports</category>
-        
-      </item>
-    
-      <item>
-        <title>Basketball Arcade</title>
-        <description>In this game, you will grab your favorite basketball and will try to score as many points as possible. All of the free throws will happen from different angles and distances. Pick your favorite team and try to be the best player around! There is a time limit, so you need to be quick. You have a total of 20 balls that you can use. It&amp;amp;rsquo;s no easy task, since you need to guess the angle and strength that you need to hit. How to play: - Pick up the ball over the table. - Press and hold left mouse button, when shooting, to increase the shooting force. Force will show on the right indicator. - Shoot and try to get the most score before time is over</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/basketball-arcade/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/basketball-arcade/</guid>
-        
-        <category>Ball</category>
-        
-        <category>Basketball</category>
-        
-        <category>Sport</category>
-        
-      </item>
-    
-      <item>
-        <title>tic tak to </title>
-        <description>Tic Tac Toe Game - Description &amp;amp;amp; Controls Game Description This Tic Tac Toe game is a modern, interactive version of the classic two-player strategy game. Players take turns marking X or O on a 3&amp;amp;times;3 grid, aiming to get three of their symbols in a row (horizontally, vertically, or diagonally). Game Features: Two-Player Mode (Player X vs. Player O) Score Tracking (Wins are recorded) Winner Announcement (Popup when a player wins or its a draw) Responsive Design (Works on mobile &amp;amp;amp; desktop) Simple &amp;amp;amp; Clean UI (Easy to play)</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/tic-tak-to/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/tic-tak-to/</guid>
-        
-        <category>2 Player</category>
-        
-        <category>Stickman</category>
-        
-      </item>
-    
-      <item>
-        <title>Sprunki Monster Hunt</title>
-        <description>Dive into the exciting world of Sprunki monsters with our game, Sprunki Memory Match: Monster Hunt Quest! Sharpen your memory skills as you match pairs of Sprunki characters on the playing field. Keep track of the locations of the adorable monsters and uncover their doubles before time runs out. But beware, you have a limited number of steps to complete each level. Test your memory and embark on a thrilling adventure with Sprunki Memory Match: Monster Hunt Quest!</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/sprunki-monster-hunt/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/sprunki-monster-hunt/</guid>
-        
-        <category>Dancing</category>
-        
-        <category>Fun</category>
-        
-        <category>Funny</category>
-        
-        <category>Kids</category>
-        
-        <category>Memory</category>
-        
-        <category>Puzzle</category>
-        
-      </item>
-    
-      <item>
-        <title>Zombie Fist</title>
-        <description>Step into a fast-paced 2D action world where you are the lone hero standing against waves of enemies! In this adrenaline-pumping arcade-style game, you control a martial arts master who performs punches, kicks, and other powerful moves with just a click of the mouse. Gameplay Highlights: Enemies appear randomly from both left and right sides of the screen. React quickly and click to attack with precision&amp;amp;mdash;time your moves to survive! Watch out as the pace increases and the enemies come faster! Clean and vibrant 2D visuals make the action feel smooth and satisfying.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/zombie-fist/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/zombie-fist/</guid>
-        
-        <category>Arena</category>
-        
-        <category>Battle</category>
-        
-      </item>
-    
-      <item>
-        <title>Draw Logic Puzzle</title>
-        <description>Draw Logic Puzzle is a captivating 2D puzzle game built with Unity that challenges players to think creatively and solve levels by drawing lines, shapes, and paths. Each puzzle presents a unique scenario where your drawings become the solution&amp;amp;mdash;whether its building a bridge, redirecting a fall, or guiding the character safely to its target. With intuitive controls, brain-teasing mechanics, and charming visuals, Draw Logic Puzzle offers a fun and engaging experience for players of all ages.</description>
-        <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
-        <link>http://0.0.0.0:5000/draw-logic-puzzle/</link>
-        <guid isPermaLink="true">http://0.0.0.0:5000/draw-logic-puzzle/</guid>
-        
-        <category>Casual</category>
-        
-        <category>Hypercasual</category>
-        
-        <category>Puzzle</category>
-        
-        <category>puzzleblock</category>
-        
-      </item>
-    
+    <pubDate>Sun, 13 Apr 2025 10:14:37 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Apr 2025 10:14:37 +0000</lastBuildDate>
+    <generator>Jekyll Game Monetize Feed Generator</generator>
+    <language>en-us</language>
+    <item>
+      <title>Stunt Car Extreme</title>
+      <description>Drive through challenging tracks and perform stunts with your car in this exciting racing game.</description>
+      <pubDate>Sun, 13 Apr 2025 12:00:00 +0000</pubDate>
+      <link>http://0.0.0.0:5000/stunt-car-extreme/</link>
+      <guid isPermaLink="false">game-1</guid>
+      <enclosure url="https://img.gamemonetize.com/xzpnmtfpd1vgzv3xsu5yctge2bq2q2ck/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>racing</category>
+      <category>action</category>
+      <category>stunts</category>
+    </item>
+    <item>
+      <title>Tower Defense Kingdom Wars</title>
+      <description>Defend your kingdom against waves of enemies by strategically placing towers and upgrading your defenses.</description>
+      <pubDate>Sun, 13 Apr 2025 11:00:00 +0000</pubDate>
+      <link>http://0.0.0.0:5000/tower-defense-kingdom-wars/</link>
+      <guid isPermaLink="false">game-2</guid>
+      <enclosure url="https://img.gamemonetize.com/ynt0ucvk4pneq7ehfmrxhgvvwgz5k4u9/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>strategy</category>
+      <category>tower defense</category>
+      <category>war</category>
+    </item>
+    <item>
+      <title>Monster Blocks</title>
+      <description>Connect matching monster blocks to clear the board and progress through increasingly challenging puzzles.</description>
+      <pubDate>Sun, 13 Apr 2025 10:00:00 +0000</pubDate>
+      <link>http://0.0.0.0:5000/monster-blocks/</link>
+      <guid isPermaLink="false">game-3</guid>
+      <enclosure url="https://img.gamemonetize.com/7aa5trtga3mgqn8nt3xlzr19zqqvzbtw/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>puzzle</category>
+      <category>casual</category>
+      <category>blocks</category>
+    </item>
+    <item>
+      <title>Sprunki 456 Squid Cookie</title>
+      <description>The Sprunki brothers have invaded the entire forest and theyre everywhere. You must help the turquoise and red-suited brothers to reach the cash register as quickly as possible. Help all the brothers. Collect the cookies and reach the cash register. Throw cookies at the Sprunki brothers and defeat them.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/sprunki-456-squid-cookie/</link>
+      <guid isPermaLink="false">33656</guid>
+      <enclosure url="https://img.gamemonetize.com/yv9zfw3upjb12a2hmnll9m49c57poyir/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>2 Player</category>
+      <category>2 Player Games</category>
+      <category>2D</category>
+      <category>Adventure</category>
+      <category>Arcade</category>
+      <category>Sprunki</category>
+      <category>squid</category>
+      <category>squidgame</category>
+    </item>
+    <item>
+      <title>Click Energy</title>
+      <description>Click Energy is a fast-paced casual game where every second counts! Tap on the appearing objects as quickly as possible &amp;amp;mdash; but watch out for the red ones! Miss too many or click the wrong one, and it&amp;amp;rsquo;s game over. How many can you catch before time runs out?</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/click-energy/</link>
+      <guid isPermaLink="false">33657</guid>
+      <enclosure url="https://img.gamemonetize.com/4g0icu0zzo4r6q9y8c0uhby7ezcgzszr/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Click</category>
+      <category>Hypercasual</category>
+      <category>Pixel</category>
+    </item>
+    <item>
+      <title>Skibidi Toilet Sharp Shooter</title>
+      <description>Skibidi Toilet Sharp Shooter is an exciting and challenging shooting game that puts your precision and strategic skills to the test. In this game, you take control of the iconic Skibidi Toilet, tasked with eliminating waves of stickman enemies. However, this isn&amp;amp;rsquo;t just a simple shoot-&amp;amp;rsquo;em-up game&amp;amp;mdash;each level is designed to test your accuracy and decision-making, as you&amp;amp;rsquo;ll have a limited number of bullets to take out every stickman enemy in sight. At the start of each level, stickman enemies line up, waiting to be shot. While it may seem easy at first, the difficulty quickly ramps up as you progress. The stickmen may start moving, creating dist</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/skibidi-toilet-sharp-shooter/</link>
+      <guid isPermaLink="false">33658</guid>
+      <enclosure url="https://img.gamemonetize.com/x7pi2xioc5nr43wg4xclivtz3eyfr53d/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Shooter</category>
+      <category>Skibidi</category>
+      <category>Skibidi Toilet</category>
+      <category>Stickman</category>
+    </item>
+    <item>
+      <title>Grass Ranch</title>
+      <description>Grass Ranch is a super fun and relaxing casual game that makes you a true ranch grass-mowing master. If you like to complete simple and fun tasks in a cozy environment, then you cant miss this game. In this world of green grass, you will mow grass constantly. Keep mowing the lawn and feed some cute animals.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/grass-ranch/</link>
+      <guid isPermaLink="false">33659</guid>
+      <enclosure url="https://img.gamemonetize.com/jfku2chwk30oquvngfwfnm4pqrajvtu3/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Animal</category>
+      <category>cut</category>
+      <category>Relaxation</category>
+    </item>
+    <item>
+      <title>Avatar Life My Town</title>
+      <description>Avatar Life: My Town game is a casual simulator game for kids. You can enjoy creating your sweet home stories! Meet fun family characters in the dollhouse game! Role-play house games and manage family life in your new home! You need to take good care of your character and prepare delicious food. Cooking a big meal.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/avatar-life-my-town/</link>
+      <guid isPermaLink="false">33660</guid>
+      <enclosure url="https://img.gamemonetize.com/6xuwuvslseewbcdb3x9rp3hz3qcwp4ej/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Cook</category>
+      <category>Family</category>
+      <category>Fun</category>
+      <category>Simulator</category>
+    </item>
+    <item>
+      <title>Merge Diamonds: Treasure!</title>
+      <description>Your task is to connect diamonds until you get the biggest one. Compete with friends and colleagues! In the game you have a game zone where diamonds fall and connect if they have the same color! Connect as many diamonds as possible to get the biggest one, collect points! Become the first on the leaderboard! The game has relaxing gameplay and beautiful graphics, play and relax!</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/merge-diamonds-treasure/</link>
+      <guid isPermaLink="false">33661</guid>
+      <enclosure url="https://img.gamemonetize.com/z4fspnywdaanz9x1riy3cfewfmov04w9/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>1 Player</category>
+      <category>2048</category>
+      <category>2D</category>
+      <category>Android</category>
+      <category>Ball</category>
+      <category>Brain</category>
+      <category>Game</category>
+      <category>Logic</category>
+    </item>
+    <item>
+      <title>Color Hoop: Sort Puzzle</title>
+      <description>Welcome to Color Hoop: Sort Puzzle Game, the ultimate game of your sorting color and puzzle game solving skills! Immerse yourself in a world of vibrant colors and challenging puzzles, where your mission is to sort and organize many kinds of colorful hoops. This addictive and visually captivating game will keep you entertained for hours on end.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/color-hoop-sort-puzzle/</link>
+      <guid isPermaLink="false">33662</guid>
+      <enclosure url="https://img.gamemonetize.com/q2fcgyk3dtprdnf8279v45ssixlwqi9v/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Clicker</category>
+      <category>Color</category>
+      <category>Puzzle</category>
+      <category>sort</category>
+      <category>sorting</category>
+    </item>
+    <item>
+      <title>The Puzzle Box Challenge</title>
+      <description>The Puzzle Box Challenge Get ready to test your brain with The Puzzle Box Challenge &amp;amp;ndash; the ultimate number-merging puzzle game! Slide, merge, and match identical numbers to create higher values and beat your high score. Every move counts as you try to clear the board, unlock combos, and strategize your way through endless merging fun! How to Play: Merge matching numbers to create a new one. Plan your moves wisely &amp;amp;ndash; the board fills up fast! Go for chain merges and watch your score soar! Features: Addictive number-merging gameplay Minimalistic and colorful design</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/the-puzzle-box-challenge/</link>
+      <guid isPermaLink="false">33663</guid>
+      <enclosure url="https://img.gamemonetize.com/8aszfmel2cxh1dn7o3f9i9sksrck3aem/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>1 Player</category>
+      <category>Arcade</category>
+      <category>Hypercasual</category>
+      <category>Puzzle</category>
+      <category>puzzleblock</category>
+      <category>unity</category>
+      <category>unity games</category>
+      <category>Unity3D</category>
+    </item>
+    <item>
+      <title>The Best Warrior</title>
+      <description>In The Best Warrior, you start as a humble peasant with one goal&amp;amp;mdash;to become the greatest warrior in the kingdom. Train by clicking on dummies to build attack power, defeat enemies for gold, and unlock powerful skins to grow even faster. Face epic bosses, collect timed chest rewards, and rise through multiple levels. With nonstop action, upgrades, and progression, this free adventure clicker game lets you prove your strength with every tap. Start your journey now and become a legend!</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/the-best-warrior/</link>
+      <guid isPermaLink="false">33664</guid>
+      <enclosure url="https://img.gamemonetize.com/yoxy6vzt9nu1h0uqzgngm8a9vht6fgjk/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Action</category>
+      <category>Adventure</category>
+      <category>attack</category>
+      <category>Battle</category>
+      <category>Best</category>
+      <category>Best Games</category>
+      <category>Click</category>
+      <category>Clicker</category>
+      <category>Fighting</category>
+      <category>Knight</category>
+      <category>Pixel</category>
+      <category>RPG</category>
+      <category>Sword</category>
+      <category>Warrior</category>
+    </item>
+    <item>
+      <title>FNAF Strike 2</title>
+      <description>FNAF Strike 2 is an intense first-person shooter game that throws you into a terrifying battle for survival against hostile animatronics. Armed with a wide variety of powerful weapons, you must fight your way through dark, eerie corridors where danger lurks around every corner. Each level presents a new challenge, as you explore creepy environments filled with jump scares and hidden threats while trying to find the exit and make it out alive. Quick reflexes, smart weapon choices, and constant vigilance are your keys to surviving the nightmare.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/fnaf-strike-2/</link>
+      <guid isPermaLink="false">33665</guid>
+      <enclosure url="https://img.gamemonetize.com/fbbw9nepexo76ol7g11vkkl3gdptsihy/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>3D</category>
+      <category>3D Games</category>
+      <category>Action</category>
+      <category>CSGO</category>
+      <category>First Person Shooter</category>
+      <category>Horror</category>
+      <category>Shoot</category>
+      <category>Shoot &apos;Em Up</category>
+      <category>Shooter</category>
+      <category>Shooting</category>
+      <category>Unity3D</category>
+    </item>
+    <item>
+      <title>Fidget Pop Run</title>
+      <description>Come to the colorful world of Fidget Pop Run. Begin a casual arcade game. Race, jump, and pop colorful bubbles along the way. Choose the path to pass according to your characters color. Increase your energy value. Watch out for the wall or youll fail.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:39 +0000</pubDate>
+      <link>http://0.0.0.0:5000/fidget-pop-run/</link>
+      <guid isPermaLink="false">33666</guid>
+      <enclosure url="https://img.gamemonetize.com/5tlci5vfndoglmilwo1pmgnkbu51q9ph/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Bubble</category>
+      <category>Monster</category>
+      <category>run</category>
+    </item>
+    <item>
+      <title>Basketball Park</title>
+      <description>Start the game with 10 balls. Drag and release to shoot. Score without touching the rim to earn extra balls. Aim for high scores to unlock helpful creatures. Check the leaderboard to see how you compete with the top players. Special creatures might pop up to lend assistance as you hit score milestones, adding a fun and unpredictable twist.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/basketball-park/</link>
+      <guid isPermaLink="false">33667</guid>
+      <enclosure url="https://img.gamemonetize.com/kyn5fpfwlh86jgcsff85trjsxntpva2i/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>1 Player</category>
+      <category>3D</category>
+      <category>3D Games</category>
+      <category>Ball</category>
+      <category>Basketball</category>
+      <category>Highscore</category>
+      <category>Sports</category>
+    </item>
+    <item>
+      <title>Basketball Arcade</title>
+      <description>In this game, you will grab your favorite basketball and will try to score as many points as possible. All of the free throws will happen from different angles and distances. Pick your favorite team and try to be the best player around! There is a time limit, so you need to be quick. You have a total of 20 balls that you can use. It&amp;amp;rsquo;s no easy task, since you need to guess the angle and strength that you need to hit. How to play: - Pick up the ball over the table. - Press and hold left mouse button, when shooting, to increase the shooting force. Force will show on the right indicator. - Shoot and try to get the most score before time is over</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/basketball-arcade/</link>
+      <guid isPermaLink="false">33668</guid>
+      <enclosure url="https://img.gamemonetize.com/zn51bpwab321ow86zhq55orvs30a9zkh/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Ball</category>
+      <category>Basketball</category>
+      <category>Sport</category>
+    </item>
+    <item>
+      <title>tic tak to </title>
+      <description>Tic Tac Toe Game - Description &amp;amp;amp; Controls Game Description This Tic Tac Toe game is a modern, interactive version of the classic two-player strategy game. Players take turns marking X or O on a 3&amp;amp;times;3 grid, aiming to get three of their symbols in a row (horizontally, vertically, or diagonally). Game Features: Two-Player Mode (Player X vs. Player O) Score Tracking (Wins are recorded) Winner Announcement (Popup when a player wins or its a draw) Responsive Design (Works on mobile &amp;amp;amp; desktop) Simple &amp;amp;amp; Clean UI (Easy to play)</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/tic-tak-to-/</link>
+      <guid isPermaLink="false">33669</guid>
+      <enclosure url="https://img.gamemonetize.com/vhwpg74ut6qx4jpq2zaun36b5083v3i4/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>2 Player</category>
+      <category>Stickman</category>
+    </item>
+    <item>
+      <title>Sprunki Monster Hunt</title>
+      <description>Dive into the exciting world of Sprunki monsters with our game, Sprunki Memory Match: Monster Hunt Quest! Sharpen your memory skills as you match pairs of Sprunki characters on the playing field. Keep track of the locations of the adorable monsters and uncover their doubles before time runs out. But beware, you have a limited number of steps to complete each level. Test your memory and embark on a thrilling adventure with Sprunki Memory Match: Monster Hunt Quest!</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/sprunki-monster-hunt/</link>
+      <guid isPermaLink="false">33670</guid>
+      <enclosure url="https://img.gamemonetize.com/2e7evz4wy3fpjo6snrauc8bof3xzk7kr/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Dancing</category>
+      <category>Fun</category>
+      <category>Funny</category>
+      <category>Kids</category>
+      <category>Memory</category>
+      <category>Puzzle</category>
+    </item>
+    <item>
+      <title>Zombie Fist</title>
+      <description>Step into a fast-paced 2D action world where you are the lone hero standing against waves of enemies! In this adrenaline-pumping arcade-style game, you control a martial arts master who performs punches, kicks, and other powerful moves with just a click of the mouse. Gameplay Highlights: Enemies appear randomly from both left and right sides of the screen. React quickly and click to attack with precision&amp;amp;mdash;time your moves to survive! Watch out as the pace increases and the enemies come faster! Clean and vibrant 2D visuals make the action feel smooth and satisfying.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/zombie-fist/</link>
+      <guid isPermaLink="false">33671</guid>
+      <enclosure url="https://img.gamemonetize.com/y0ntm5v0t7ghx4b8gcyp1nqgdprdh0xk/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Arena</category>
+      <category>Battle</category>
+    </item>
+    <item>
+      <title>Draw Logic Puzzle</title>
+      <description>Draw Logic Puzzle is a captivating 2D puzzle game built with Unity that challenges players to think creatively and solve levels by drawing lines, shapes, and paths. Each puzzle presents a unique scenario where your drawings become the solution&amp;amp;mdash;whether its building a bridge, redirecting a fall, or guiding the character safely to its target. With intuitive controls, brain-teasing mechanics, and charming visuals, Draw Logic Puzzle offers a fun and engaging experience for players of all ages.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/draw-logic-puzzle/</link>
+      <guid isPermaLink="false">33672</guid>
+      <enclosure url="https://img.gamemonetize.com/6lap1gr7cqfvd0ymcd722f1hmk7z806c/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Casual</category>
+      <category>Hypercasual</category>
+      <category>Puzzle</category>
+      <category>puzzleblock</category>
+    </item>
+    <item>
+      <title>Merge Toilet Skib Fight</title>
+      <description>Merge Toilet Skib Fight is an outlandish and action-packed game where players control bizarre, larger-than-life characters engaged in a battle for dominance. In this quirky, futuristic world, mechanical creatures with toilet-inspired designs and humanoid features face off, unleashing powerful laser beams and outlandish attacks. Web Dev &amp;lt;a href=&apos;https://www.crazygamesonline.com/&apos;&amp;gt;https://www.crazygamesonline.com/&amp;lt;/a&amp;gt;</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/merge-toilet-skib-fight/</link>
+      <guid isPermaLink="false">33673</guid>
+      <enclosure url="https://img.gamemonetize.com/9jxku3aopigj8bsx576xi8qo1kfpqg4v/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Skibidi</category>
+      <category>Skibidi Toilet</category>
+    </item>
+    <item>
+      <title>Hole And Fill Collect Master</title>
+      <description>You are invited to join Hole And Fill Collect Master. Here, you will play as a magical &amp;amp;ldquo;hole&amp;amp;rdquo;, by devouring and collecting all kinds of food to fill yourselves and become more and more powerful. The goal is to collect as much food in the scene as possible, such as cakes, meat, donuts, etc. The bigger the item you eat, the faster you upgrade.</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/hole-and-fill-collect-master/</link>
+      <guid isPermaLink="false">33674</guid>
+      <enclosure url="https://img.gamemonetize.com/177jps772f21yuf2qfupbj881figqak7/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>Battle</category>
+      <category>Cook</category>
+      <category>Food</category>
+    </item>
+    <item>
+      <title>007 Cameraman Enemy Skibidi</title>
+      <description>Agent 007 must survive. He needs to collect money and defeat all the Skibidi enemies. The enemies come from everywhere. He must have the most powerful bullets and defeat them all. He can play through all the challenges, but theres one thing he forgets &amp;amp;mdash; if he doesn&amp;amp;rsquo;t upgrade himself, he will lose. Whether youre a chef or Santa Claus, grab your weapon and shoot all the Skibidi enemies!</description>
+      <pubDate>Sun, 13 Apr 2025 09:56:38 +0000</pubDate>
+      <link>http://0.0.0.0:5000/007-cameraman-enemy-skibidi/</link>
+      <guid isPermaLink="false">33675</guid>
+      <enclosure url="https://img.gamemonetize.com/4b5t5xufy19syzomrxd0rgnbkibpb6oy/512x384.jpg" length="0" type="image/jpeg"/>
+      <category>1 Player</category>
+      <category>2D</category>
+      <category>Action</category>
+      <category>Arcade</category>
+      <category>Army</category>
+      <category>Gun</category>
+      <category>Skibidi</category>
+      <category>Skibidi Toilet</category>
+    </item>
   </channel>
 </rss>

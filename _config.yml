@@ -8,11 +8,10 @@ url: "https://yourdomain.com" # the base hostname & protocol for your site
 markdown: kramdown
 permalink: /:title/
 
-# Plugins
-plugins:
-  - jekyll-feed
+# Plugins - semua fitur feed dan sitemap menggunakan plugin kustom
+plugins: []
 
-# Sitemap akan dibuat melalui plugin kustom
+# Feed dan sitemap dibuat melalui plugin kustom di _plugins/
 
 # Collections
 collections:
@@ -43,6 +42,17 @@ social:
     - https://facebook.com/yourusername
     - https://instagram.com/yourusername
 
+# HTML Compression settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
 # Other settings
 exclude:
   - Gemfile
@@ -52,3 +62,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - crontab_setup.sh
+  - deploy.sh
+  - .github

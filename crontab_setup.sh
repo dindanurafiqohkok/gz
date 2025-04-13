@@ -1,31 +1,20 @@
 #!/bin/bash
 
-# Script untuk mengatur cron job agar menjalankan refresh content setiap 40 menit
-# dan deploy ke GitHub Pages
+# Script untuk menyiapkan crontab untuk refresh konten otomatis
+# Jika menggunakan GitHub Pages, ini mungkin tidak diperlukan
+# karena kita bisa menggunakan GitHub Actions
 
-CURRENT_PATH=$(pwd)
+# Pastikan crontab ada
+command -v crontab >/dev/null 2>&1 || { echo "Error: crontab not installed."; exit 1; }
 
-# Buat temporary crontab file
-echo "# GameMonetize Jekyll Site Cron Jobs" > /tmp/gamecron
-echo "# Regenerasi konten setiap 40 menit" >> /tmp/gamecron
-echo "*/40 * * * * cd $CURRENT_PATH && bash $CURRENT_PATH/refresh_content.sh > $CURRENT_PATH/logs/refresh_$(date +\%Y\%m\%d).log 2>&1" >> /tmp/gamecron
-echo "# Deploy ke GitHub Pages setiap 40 menit, 5 menit setelah regenerasi konten" >> /tmp/gamecron
-echo "5,45 * * * * cd $CURRENT_PATH && bash $CURRENT_PATH/deploy.sh > $CURRENT_PATH/logs/deploy_$(date +\%Y\%m\%d).log 2>&1" >> /tmp/gamecron
+# Dapatkan direktori saat ini
+CURRENT_DIR=$(pwd)
 
-# Buat direktori logs jika belum ada
-mkdir -p $CURRENT_PATH/logs
+# Buat pekerjaan cron untuk menjalankan refresh_content.sh setiap jam (pada menit 0)
+# Tambahkan ke crontab user saat ini
+(crontab -l 2>/dev/null || echo "") | grep -v "refresh_content.sh" | \
+{ cat; echo "0 * * * * cd $CURRENT_DIR && ./refresh_content.sh >> $CURRENT_DIR/cron.log 2>&1"; } | \
+crontab -
 
-# Install crontab
-echo "Mengatur cron job untuk regenerasi konten setiap 40 menit..."
-crontab /tmp/gamecron
-
-# Cek status crontab
-echo "Cron job yang telah diatur:"
-crontab -l
-
-# Hapus file temporary
-rm /tmp/gamecron
-
-echo "Cron job berhasil diatur!"
-echo "Konten akan diregenerasi otomatis setiap 40 menit dan dideploy ke GitHub Pages."
-echo "Log dapat dilihat di folder $CURRENT_PATH/logs"
+echo "Crontab has been set up to run refresh_content.sh every hour."
+echo "To view current crontab, run: crontab -l"
